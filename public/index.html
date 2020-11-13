@@ -22,9 +22,49 @@
     <script src="assets/js/page-slide/slide.js"></script>
     <link rel="stylesheet" href="assets/js/page-slide/slide.css">
     <!--  // slider page  -->
+    <style>
+        .norwegian {
+            background: linear-gradient(225deg, #ffc27d, #ff8e93);
+        }
+        .french {
+            background: linear-gradient(#f3defc, #63a3e6);
+        }
+        .spanish {
+            background: linear-gradient(#d2fcad, #22eaeb);
+        }
+        .hindi{
+            background: linear-gradient(#f0bed4, #a163f5);
+        }
+        .mandarin {
+            background: linear-gradient(#65cce1, #6365ec);
+        }
 
+        section > h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 7vw;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="text-blue-900 font-bold">Hello</h1>
+    <div class="slides">
+        <section id="home" class="norwegian"><h2>Start Page</h2></section>
+        <section class="french"><h2>Adagio — это не просто апарт-отель</h2></section>
+        <section class="spanish"><h2>Мировой сервис в Сочи</h2></section>
+        <section class="hindi"><h2>Виды апартаментов</h2></section>
+        <section class="mandarin"><h2>Инвестиции, которые работают</h2></section>
+        <section class="mandarin"><h2>Скачайте подробную презентацию об апарт-отеле Adagio в 1 клик</h2></section>
+        <section class="mandarin"><h2>Галерея</h2></section>
+        <section class="mandarin"><h2>Footer</h2></section>
+    </div>
+
+    <script>
+        var mySlider = slider('.slides');
+    </script>
 </body>
 </html>
