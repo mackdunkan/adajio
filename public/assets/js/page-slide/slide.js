@@ -50,9 +50,12 @@ var slider = function (sliderElement) {
         var index = 1;
         [].forEach.call(document.querySelectorAll(sliderElement + ' > *'), function (section) {
 
-            var indicator = document.createElement('a');
+            var indicator = document.createElement('button');
             indicator.classList.add('slider__indicator')
+            indicator.setAttribute('type', 'button');
             indicator.setAttribute('data-slider-target-index', index);
+
+            indicator.setAttribute('data-slider-target', `#${section.id}`);
             indicatorContainer.appendChild(indicator);
 
             section.classList.add('slider__page');
@@ -61,7 +64,7 @@ var slider = function (sliderElement) {
         });
 
         document.body.appendChild(indicatorContainer);
-        document.querySelector('a[data-slider-target-index = "' + currentSlide +'"]').classList.add('slider__indicator--active');
+        document.querySelector('button[data-slider-target-index = "' + currentSlide +'"]').classList.add('slider__indicator--active');
 
 
         // stuff for touch devices
@@ -69,10 +72,12 @@ var slider = function (sliderElement) {
         var touchStopPos = 0;
         var touchMinLength = 90;
         document.addEventListener('touchstart', function (e) {
-            e.preventDefault();
             if (e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel') {
                 var touch = e.touches[0] || e.changedTouches[0];
                 touchStartPos = touch.pageY;
+                if(e.target.className === 'slider__indicator'){
+                    gotoSlide(pathSection(e))
+                }
             }
         });
         document.addEventListener('touchend', function (e) {
@@ -87,7 +92,16 @@ var slider = function (sliderElement) {
                 changeSlide(1);
             }
         });
+
+        document.querySelector('.slider__indicators').addEventListener("click", (e) => {
+            if(e.target.className === 'slider__indicator'){
+                gotoSlide(pathSection(e))
+            }
+
+        });
     };
+
+    const pathSection = (e) => e.target.dataset.sliderTarget
 
 
     // prevent double scrolling
@@ -135,17 +149,20 @@ var slider = function (sliderElement) {
         });
 
         // change dots
-        document.querySelector('a.slider__indicator--active').classList.remove('slider__indicator--active');
-        document.querySelector('a[data-slider-target-index="' + currentSlide +'"]').classList.add('slider__indicator--active');
+        document.querySelector('button.slider__indicator--active').classList.remove('slider__indicator--active');
+        document.querySelector('button[data-slider-target-index="' + currentSlide +'"]').classList.add('slider__indicator--active');
     };
 
     // go to spesific slide if it exists
-    var gotoSlide = function (where) {
-        var target = document.querySelector(where).getAttribute('data-slider-index');
+    const gotoSlide = function (where) {
+        const target = document.querySelector(where).getAttribute('data-slider-index');
         if (target != currentSlide && document.querySelector(where)) {
             changeSlide(target - currentSlide);
         }
     };
+
+
+
 
     // if page is loaded with hash, go to slide
     if (location.hash) {
