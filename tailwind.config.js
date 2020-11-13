@@ -5,7 +5,14 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
+    container: {
+      padding: '1rem',
+    },
+    extend: {
+      colors: {
+        red: "#de2847"
+      }
+    },
   },
   variants: {},
   plugins: [],

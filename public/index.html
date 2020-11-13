@@ -38,29 +38,47 @@
         .mandarin {
             background: linear-gradient(#65cce1, #6365ec);
         }
-
-        section > h2 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 7vw;
-            font-family: sans-serif;
-            text-transform: uppercase;
-            color: #fff;
-        }
     </style>
 </head>
 <body>
     <div class="slides">
-        <section id="home" class="norwegian"><h2>Start Page</h2></section>
-        <section class="french"><h2>Adagio — это не просто апарт-отель</h2></section>
-        <section class="spanish"><h2>Мировой сервис в Сочи</h2></section>
-        <section class="hindi"><h2>Виды апартаментов</h2></section>
-        <section class="mandarin"><h2>Инвестиции, которые работают</h2></section>
-        <section class="mandarin"><h2>Скачайте подробную презентацию об апарт-отеле Adagio в 1 клик</h2></section>
-        <section class="mandarin"><h2>Галерея</h2></section>
-        <section class="mandarin"><h2>Footer</h2></section>
+        <section id="home" class="flex items-center relative bg-cover bg-center bg-fixed" style="background-image: url(assets/images/section/bg__home.jpg)">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="container mx-auto relative">
+                <div class="sm:flex sm:justify-between">
+                    <div class="text-2xl font-bold text-white">
+                        ADAGIO
+                    </div>
+                    <div class="space-y-4 sm:flex sm:space-x-8 sm:space-y-0 sm:place-items-end">
+                        <div>
+                            <p class="text-white">Горячая линия:</p>
+                            <a class="text-blue-600" href="tel:+78625552582" class="no-underline"><b>8 (862) 555-25-82</b></a>
+                            <p class="text-red">Работаем сейчас!</p>
+                        </div>
+                        <button type="button" class="text-white px-8 py-2 border-2 border-white">Заказать звонок</button>
+                    </div>
+                </div>
+                <div class="leading-none mt-4">
+                    <p class="text-white text-6xl font-bold">Инвестируй!</p>
+                    <p class="text-white text-6xl font-bold">Живи!</p>
+                    <p class="text-white text-6xl font-bold">Наслаждайся!</p>
+                </div>
+                <div class="mt-8">
+                    <h1 class="text-white text-3xl font-bold">Апарт-отель Adagio Le Rond Sochi</h1>
+                    <p class="text-white text-lg">Adagio Aparthotel - это апартаменты с высокой доходностью и высококлассный бренд. Сеть апарт-отелей № 1 в Европе, основана в 2007 году. Имеет более 100 отелей в 11 странах мира. Находится под управлением французской международной гостиничной сети Accor Hotels.</p>
+                </div>
+                <button class="bg-red mt-3 px-5 py-2 text-white text-xl font-bold" type="button">Подробнее о выгоде</button>
+            </div>
+        </section>
+        <section id="adajio" class="flex items-center bg-white"><h2 class="text-black">Adagio — это не просто апарт-отель</h2></section>
+        <section id="service" class="flex items-center bg-video"><h2>Мировой сервис в Сочи</h2></section>
+        <section id="apartments" class="flex items-center bg-white"><h2>Виды апартаментов</h2></section>
+        <section id="investments" class="flex items-center bg-video"><h2>Инвестиции, которые работают</h2></section>
+        <section id="download" class="flex items-center bg-red"><h2>Скачайте подробную презентацию об апарт-отеле Adagio в 1 клик</h2></section>
+        <section id="advantage" class="flex items-center bg-cover bg-center bg-fixed" style="background-image: url(assets/images/section/bg__home.jpg)"><h2>Преимущества Adagio</h2></section>
+        <section id="gallery" class="flex items-center"><h2>Галерея</h2></section>
+        <section id="map" class="flex items-center"></section>
+        <section id="footer" class="flex items-center bg-cover bg-center" style="background-image: url(assets/images/section/bg__footer.jpg)"><h2>Footer</h2></section>
     </div>
 
     <script>
