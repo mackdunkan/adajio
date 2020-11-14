@@ -10,7 +10,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        red: "#de2847"
+        'red': "#de2847",
+        'red-h': "#e53734"
       }
     },
   },
