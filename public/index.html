@@ -22,6 +22,7 @@
     <script src="assets/js/page-slide/slide.js"></script>
     <link rel="stylesheet" href="assets/js/page-slide/slide.css">
     <!--  // slider page  -->
+    <script src="assets/js/script.js"></script>
     <style>
         .norwegian {
             background: linear-gradient(225deg, #ffc27d, #ff8e93);
@@ -35,11 +36,12 @@
         .hindi{
             background: linear-gradient(#f0bed4, #a163f5);
         }
-        .mandarin {
+        .bg-video {
             background: linear-gradient(#65cce1, #6365ec);
         }
     </style>
 </head>
+<!--<button class="bg-red mt-8 px-5 py-4 text-white text-xl font-bold leading-none" type="button">Выбрать апартаменты</button>-->
 <body>
     <div class="slides">
         <section id="home" class="flex items-center relative bg-cover bg-center bg-fixed" style="background-image: url(assets/images/section/bg__home.jpg)">
@@ -49,32 +51,248 @@
                     <div class="text-2xl font-bold text-white">
                         ADAGIO
                     </div>
-                    <div class="space-y-4 sm:flex sm:space-x-8 sm:space-y-0 sm:place-items-end">
-                        <div>
-                            <p class="text-white">Горячая линия:</p>
-                            <a class="text-blue-600" href="tel:+78625552582" class="no-underline"><b>8 (862) 555-25-82</b></a>
-                            <p class="text-red">Работаем сейчас!</p>
+                    <div class="space-y-4 sm:flex sm:space-x-8 sm:space-y-0 sm:place-items-end sm:items-center">
+                        <div class="text-right">
+                            <p class="text-white text-xl">Горячая линия:</p>
+                            <a class="text-blue-700 text-xl font-bold" href="tel:+78625552582" class="no-underline">8 (862) 555-25-82</a>
+                            <p class="text-red text-xl font-bold">Работаем сейчас!</p>
                         </div>
-                        <button type="button" class="text-white px-8 py-2 border-2 border-white">Заказать звонок</button>
+                        <button type="button" class="text-white px-8 py-3 border-2 border-white rounded">Заказать звонок</button>
                     </div>
                 </div>
-                <div class="leading-none mt-4">
+                <div class="leading-tight mt-8">
                     <p class="text-white text-6xl font-bold">Инвестируй!</p>
                     <p class="text-white text-6xl font-bold">Живи!</p>
                     <p class="text-white text-6xl font-bold">Наслаждайся!</p>
                 </div>
                 <div class="mt-8">
                     <h1 class="text-white text-3xl font-bold">Апарт-отель Adagio Le Rond Sochi</h1>
-                    <p class="text-white text-lg">Adagio Aparthotel - это апартаменты с высокой доходностью и высококлассный бренд. Сеть апарт-отелей № 1 в Европе, основана в 2007 году. Имеет более 100 отелей в 11 странах мира. Находится под управлением французской международной гостиничной сети Accor Hotels.</p>
+                    <p class="text-white text-lg leading-normal">Adagio Aparthotel - это апартаменты с высокой доходностью и высококлассный бренд. Сеть апарт-отелей № 1 в Европе, основана в 2007 году. Имеет более 100 отелей в 11 странах мира. Находится под управлением французской международной гостиничной сети Accor Hotels.</p>
                 </div>
-                <button class="bg-red mt-3 px-5 py-2 text-white text-xl font-bold" type="button">Подробнее о выгоде</button>
+                <button class="bg-red mt-4 px-5 py-4 text-white text-xl font-bold leading-none" type="button">Подробнее о выгоде</button>
             </div>
         </section>
-        <section id="adajio" class="flex items-center bg-white"><h2 class="text-black">Adagio — это не просто апарт-отель</h2></section>
-        <section id="service" class="flex items-center bg-video"><h2>Мировой сервис в Сочи</h2></section>
-        <section id="apartments" class="flex items-center bg-white"><h2>Виды апартаментов</h2></section>
-        <section id="investments" class="flex items-center bg-video"><h2>Инвестиции, которые работают</h2></section>
-        <section id="download" class="flex items-center bg-red"><h2>Скачайте подробную презентацию об апарт-отеле Adagio в 1 клик</h2></section>
+        <section id="adagio" class="flex items-center bg-white">
+            <div class="container mx-auto relative">
+                <h2 class="text-black text-6xl font-medium text-center">Adagio — это не просто апарт-отель</h2>
+                <div class="mt-8 grid grid-cols-2 gap-8">
+                    <div>
+                        <p class="text-2xl">
+                            Покупая апартаменты Adagio, вы приобретаете готовый гостиничный бизнес со стабильным ежемесячным доходом.
+                            <br>
+                            <br>
+                            Поиск арендаторов и гостей, взаимодействие с ними и решение всех бытовых вопросов Adagio берет на себя.
+                        </p>
+                        <button class="bg-red mt-8 px-5 py-4 text-white text-xl font-bold leading-none" type="button">Выбрать апартаменты</button>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <img class="w-full" src="assets/images/section/adagio/adagio_1.jpg" alt="">
+                        <img class="w-full" src="assets/images/section/adagio/adagio_2.jpg" alt="">
+                        <img class="w-full" src="assets/images/section/adagio/adagio_3.jpg" alt="">
+                        <img class="w-full" src="assets/images/section/adagio/adagio_4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="service" class="flex items-center bg-video">
+            <div class="container mx-auto relative">
+                <h2 class="text-white text-6xl font-medium">Мировой сервис в Сочи</h2>
+                <div class="mt-8 grid grid-cols-2 gap-8">
+                    <div>
+                        <p class="text-2xl text-white">
+                            В апартаментном комплексе ADAGIO Le Rond Sochi открыта продажа номеров под международным гостиничным брендом Accor.
+                            <br>
+                            <br>
+                            Это будет не только первый в Сочи, но и первый во всей России апарт-отель мировой сети Accor, привлекающий частных инвесторов!
+                        </p>
+                        <button class="bg-red mt-8 px-5 py-4 text-white text-xl font-bold leading-none" type="button">Подробнее о Accor Hotels</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="apartments" class="flex items-center bg-white">
+            <div class="container mx-auto relative">
+                <h2 class="text-6xl font-medium">Виды апартаментов</h2>
+                <div class="mt-8">
+                    <div class="flex flex-wrap" id="tabs-id">
+                        <div class="w-full">
+                            <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
+                                <li class="-mb-px mr-2 last:mr-0 text-center">
+                                    <button class="text-xs font-bold px-2 py-3 shadow-lg rounded block leading-normal text-white bg-red focus:outline-none" onclick="changeAtiveTab(event,'tab-apartments')">
+                                        Апартаменты
+                                    </button>
+                                </li>
+                                <li class="-mb-px mr-2 last:mr-0 text-center">
+                                    <button class="text-xs font-bold px-2 py-3 shadow-lg rounded block leading-normal text-red bg-white focus:outline-none" onclick="changeAtiveTab(event,'tab-french')">
+                                        Студия с французским балконом
+                                    </button>
+                                </li>
+                                <li class="-mb-px mr-2 last:mr-0  text-center">
+                                    <button class="text-xs font-bold px-2 py-3 shadow-lg rounded block leading-normal text-red bg-white focus:outline-none" onclick="changeAtiveTab(event,'tab-terrace')">
+                                        Апартамент с одной спальней и террасой
+                                    </button>
+                                </li>
+                                <li class="-mb-px mr-2 last:mr-0 text-center">
+                                    <button class="text-xs font-bold px-2 py-3 shadow-lg rounded block leading-normal text-red bg-white focus:outline-none" onclick="changeAtiveTab(event,'tab-deluxe-2')">
+                                        Апартаменты DELUXE с двумя спальнями
+                                    </button>
+                                </li>
+                                <li class="-mb-px mr-2 last:mr-0 text-center">
+                                    <button class="text-xs font-bold px-2 py-3 shadow-lg rounded block leading-normal text-red bg-white focus:outline-none" onclick="changeAtiveTab(event,'tab-deluxe-1')">
+                                        Апартаменты DELUXE с одной спальнями
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
+                                <div class="px-4 py-5 flex-auto">
+                                    <div class="tab-content tab-space">
+                                        <div class="block" id="tab-apartments">
+                                            <div class="grid grid-cols-2 gap-4">
+                                                <div>
+                                                    <p>
+                                                        Adagio Le Rond Sochi - это 457 апартаментов. Современное инженерное обеспечение. Дизайнерский ремонт. Функциональная мебель. Бытовая техника. Полное соответствие стандартам сети апарт-отелей Adagio.
+                                                        <br><br>
+                                                        Каждый апартамент имеет балкон с великолепным видом на море, горы, территорию комплекса и гольф-поле.
+                                                        <br><br>
+                                                        Предлагаемые апартаменты вы можете приобрести для собственного отдыха, любо передать их в управление апарт-отелю и получать прибыль.
+                                                    </p>
+                                                    <div class="flex items-center mt-4">
+                                                        <img class="mr-2" src="assets/images/section/apartments/icon.png" alt="">
+                                                        <p class="text-gray-700 leading-none">В каждом апартаменте <br> полностью оборудованная кухня</p>
+                                                    </div>
+                                                    <div class="mt-4">
+                                                        <img src="assets/images/section/apartments/logotype.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="grid gap-4 justify-end">
+                                                    <img src="assets/images/section/apartments/apartments_img_1.png" alt="">
+                                                    <img src="assets/images/section/apartments/apartments_img_2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden" id="tab-french">
+                                            <div class="grid grid-cols-2 gap-4">
+                                                <div>
+                                                    <p>
+                                                        Студия общей площадью от 25 м<sup>2</sup>.
+                                                        <br>
+                                                        Идеально подходит для проживания 2-х человек.
+                                                    </p>
+                                                    <div class="mt-4">
+                                                        <img src="assets/images/section/apartments/french_map.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="grid gap-4 justify-end">
+                                                    <img src="assets/images/section/apartments/french_img_1.jpg" alt="">
+                                                    <img src="assets/images/section/apartments/french_img_2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden" id="tab-terrace">
+                                            <div class="grid grid-cols-2 gap-4">
+                                                <div>
+                                                    <p>
+                                                        Улучшенный апартамент с одной спальней и террасой.
+                                                        <br>
+                                                        В данных апартаментах с комфортом разместится семья из 4-х человек.
+                                                    </p>
+                                                    <div class="mt-4">
+                                                        <img src="assets/images/section/apartments/terrace_map.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="grid gap-4 justify-end">
+                                                    <img src="assets/images/section/apartments/terrace_img_1.jpg" alt="">
+                                                    <img src="assets/images/section/apartments/terrace_img_2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden" id="tab-deluxe-2">
+                                            <div class="grid grid-cols-2 gap-4">
+                                                <div>
+                                                    <p>
+                                                        Улучшенный апартамент с одной спальней и террасой.
+                                                        <br>
+                                                        В данных апартаментах с комфортом разместится семья из 4-х человек.
+                                                    </p>
+                                                    <div class="mt-4">
+                                                        <img src="assets/images/section/apartments/deluxe-2_map.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="grid gap-4 justify-end">
+                                                    <img src="assets/images/section/apartments/deluxe-2_img_1.jpg" alt="">
+                                                    <img src="assets/images/section/apartments/deluxe-2_img_2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden" id="tab-deluxe-1">
+                                            <div class="grid grid-cols-2 gap-4">
+                                                <div>
+                                                    <p>
+                                                        Апартамент класса Deluxe с одной спальней и большой террасой.
+                                                        <br>
+                                                        В данных апартаментах с комфортом разместится семья из 4-х человек.
+                                                    </p>
+                                                    <div class="mt-4">
+                                                        <img src="assets/images/section/apartments/deluxe-1_map.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="grid gap-4 justify-end">
+                                                    <img src="assets/images/section/apartments/deluxe-1_img_1.jpg" alt="">
+                                                    <img src="assets/images/section/apartments/deluxe-1_img_2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="investments" class="flex items-center bg-video">
+            <div class="container mx-auto relative">
+                <h2 class="text-6xl font-medium text-white text-center">Инвестиции, которые работают</h2>
+                <div class="mt-8 swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="bg-black bg-opacity-50 text-white p-8">
+                                <div class="flex items-center">
+                                    <div>
+                                        <img src="assets/images/section/investments/terrace.jpg" alt="">
+                                    </div>
+                                    <div class="ml-8">
+                                        <div class="leading-10">
+                                            <p class="text-white font-bold text-3xl">Апартамент с 1 спальней и террасой</p>
+                                            <p class="text-white font-medium text-xl">Вид на море</p>
+                                            <p class="text-white font-light text-xl">Средняя площадь: 47.4 м2</p>
+                                            <p class="text-white font-light text-xl">Терраса: 8.6 м2</p>
+                                            <p class="text-white font-bold text-xl">Чистый доход:</p>
+                                            <p class="text-white font-bold text-2xl">74 000 руб. в месяц</p>
+                                        </div>
+                                        <button class="bg-red mt-8 px-5 py-4 text-white text-xl font-bold leading-none" type="button">Получить расчет доходности</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="download" class="flex items-center bg-red">
+            <div class="container mx-auto relative">
+                <div class="grid grid-cols-2 gap-8">
+                    <div class="flex items-center">
+                        <h2 class="text-6xl font-bold text-white">Скачайте подробную презентацию об апарт-отеле Adagio в 1 клик</h2>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="assets/images/section/download/form.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="advantage" class="flex items-center bg-cover bg-center bg-fixed" style="background-image: url(assets/images/section/bg__home.jpg)"><h2>Преимущества Adagio</h2></section>
         <section id="gallery" class="flex items-center"><h2>Галерея</h2></section>
         <section id="map" class="flex items-center"></section>
