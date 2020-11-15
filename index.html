@@ -48,7 +48,7 @@
               555-25-82</a>
             <p class="text-red text-xl font-bold">Работаем сейчас!</p>
           </div>
-          <button type="button" class="text-white px-8 py-3 border-2 border-white rounded" onclick="toggleModal('callback')">Заказать звонок
+          <button type="button" class="text-white px-8 py-3 border-2 border-white rounded" onclick="openModal('callback')">Заказать звонок
           </button>
         </div>
       </div>
@@ -64,7 +64,7 @@
           11 странах мира. Находится под управлением французской международной гостиничной сети Accor
           Hotels.</p>
       </div>
-      <button onclick="toggleModal('vigoda')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
+      <button onclick="openModal('vigoda')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
         Подробнее о выгоде
       </button>
     </div>
@@ -82,7 +82,7 @@
             Поиск арендаторов и гостей, взаимодействие с ними и решение всех бытовых вопросов Adagio берет
             на себя.
           </p>
-          <button onclick="toggleModal('vibrat')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
+          <button onclick="openModal('vibrat')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
             Выбрать апартаменты
           </button>
         </div>
@@ -108,7 +108,7 @@
             Это будет не только первый в Сочи, но и первый во всей России апарт-отель мировой сети Accor,
             привлекающий частных инвесторов!
           </p>
-          <button onclick="toggleModal('accor')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
+          <button onclick="openModal('accor')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
             Подробнее о Accor Hotels
           </button>
         </div>
@@ -288,7 +288,7 @@
                       <p class="text-white font-bold text-xl">Чистый доход:</p>
                       <p class="text-white font-bold text-2xl">56 000 руб. в месяц</p>
                     </div>
-                    <button onclick="toggleModal('dohod')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h"
+                    <button onclick="openModal('dohod')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h"
                             type="button">Получить расчет доходности
                     </button>
                   </div>
@@ -310,7 +310,7 @@
                       <p class="text-white font-bold text-xl">Чистый доход:</p>
                       <p class="text-white font-bold text-2xl">59 000 руб. в месяц</p>
                     </div>
-                    <button onclick="toggleModal('dohod')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h"
+                    <button onclick="openModal('dohod')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h"
                             type="button">Получить расчет доходности
                     </button>
                   </div>
@@ -332,7 +332,7 @@
                       <p class="text-white font-bold text-xl">Чистый доход:</p>
                       <p class="text-white font-bold text-2xl">74 000 руб. в месяц</p>
                     </div>
-                    <button onclick="toggleModal('dohod')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h"
+                    <button onclick="openModal('dohod')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h"
                             type="button">Получить расчет доходности
                     </button>
                   </div>
@@ -354,7 +354,7 @@
                       <p class="text-white font-bold text-xl">Чистый доход:</p>
                       <p class="text-white font-bold text-2xl">91 000 руб. в месяц</p>
                     </div>
-                    <button onclick="toggleModal('dohod')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h"
+                    <button onclick="openModal('dohod')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h"
                             type="button">Получить расчет доходности
                     </button>
                   </div>
@@ -396,7 +396,7 @@
               <div class="mt-6 flex items-center justify-between">
                 <div class="flex items-center">
                   <input id="remember_me" type="checkbox"
-                         class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out">
+                         class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" checked>
                   <label for="remember_me" class="ml-2 block text-sm leading-5 text-white">
                     Даю согласие на <a class="border-dashed border-b border-white" href="/privacy"
                                        target="_blank">обработку персональных данных</a>
@@ -583,7 +583,7 @@
     <div class="container mx-auto relative">
       <img class="w-full" src="img/section/map/map.png" alt="">
       <div class="flex justify-center">
-        <button onclick="toggleModal('ekskursiya')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
+        <button onclick="openModal('ekskursiya')" class="bg-red mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
           Записаться на экскурсию
         </button>
       </div>
@@ -604,7 +604,7 @@
               555-25-82</a>
             <p class="text-red text-xl font-bold">Работаем сейчас!</p>
           </div>
-          <button type="button" class="text-white px-8 py-3 border-2 border-white rounded" onclick="toggleModal('callback')">Заказать звонок
+          <button type="button" class="text-white px-8 py-3 border-2 border-white rounded" onclick="openModal('callback')">Заказать звонок
           </button>
         </div>
       </div>
@@ -618,7 +618,7 @@
     <!--content-->
     <div class="max-w-600 border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
       <!--header-->
-        <button class="absolute right-0 z-10 p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal()">
+        <button class="absolute right-0 z-10 p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="modalClose()">
           <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
             ×
           </span>
@@ -658,7 +658,7 @@
             <div class="mt-6 flex items-center justify-between">
               <div class="flex items-center">
                 <input id="remember_me__phone" type="checkbox"
-                       class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out">
+                       class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" checked>
                 <label for="remember_me__phone" class="ml-2 block text-sm leading-5">
                   Даю согласие на <a class="border-dashed border-b border-red" href="/privacy"
                                      target="_blank">обработку персональных данных</a>
@@ -678,6 +678,49 @@
     </div>
   </div>
 </div>
+
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="success">
+  <div class="relative w-auto my-6 mx-auto max-w-3xl">
+    <!--content-->
+    <div class="max-w-600 border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+      <!--header-->
+      <button class="absolute right-0 z-10 p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="modalClose('success');">
+          <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+            ×
+          </span>
+      </button>
+      <!--body-->
+      <div class="relative p-12 flex-auto">
+          <h2 class="text-black text-5xl font-bold text-center leading-none">Заявка отправлена</h2>
+          <p class="text-2xl mt-8 text-center leading-none">Мы свяжемся с вами и подробно расскажем о выгодах нашего комплекса. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="error">
+  <div class="relative w-auto my-6 mx-auto max-w-3xl">
+    <!--content-->
+    <div class="max-w-600 border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+      <!--header-->
+      <button class="absolute right-0 z-10 p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="modalClose('error');">
+          <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+            ×
+          </span>
+      </button>
+      <!--body-->
+      <div class="relative p-12 flex-auto">
+        <h2 class="text-black text-5xl font-bold text-center leading-none">Что-то пошло не так!</h2>
+        <p class="text-2xl mt-8 text-center leading-none">Позвоните нам по телефону
+          <br>
+          <a class="text-blue-700 text-2xl font-bold" href="tel:+78625552582">8 (862) 555-25-82</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-backdrop"></div>
 <!--// modal-->
 
@@ -714,8 +757,16 @@
     document.getElementById(tabID).classList.add("block");
   }
 
+  const modalClose = (modalID = "modal") => {
+    document.getElementById(modalID).classList.add("hidden")
+    document.getElementById("modal-backdrop").classList.add("hidden");
+    Array.from(document.getElementsByClassName("header-modal")).forEach((el) => {
+      document.getElementById(el.id).classList.add("hidden")
+      document.getElementById("goalModalForm").value = "";
+    });
+  }
 
-  const toggleModal = (ID = null, modalID = "modal") => {
+  const openModal = (ID = null, modalID = "modal") => {
     if (ID){
       document.getElementById(ID).classList.remove("hidden")
       document.getElementById("goalModalForm").value = ID;
@@ -725,10 +776,10 @@
         document.getElementById("goalModalForm").value = "";
       });
     }
-    document.getElementById(modalID).classList.toggle("hidden");
-    document.getElementById("modal-backdrop").classList.toggle("hidden");
-    document.getElementById(modalID).classList.toggle("flex");
-    document.getElementById("modal-backdrop").classList.toggle("flex");
+    document.getElementById(modalID).classList.remove("hidden");
+    document.getElementById("modal-backdrop").classList.remove("hidden");
+    document.getElementById(modalID).classList.add("flex");
+    document.getElementById("modal-backdrop").classList.add("flex");
   }
 </script>
 </body>

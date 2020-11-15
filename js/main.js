@@ -67,12 +67,17 @@ window.addEventListener( "load", function () {
     // Define what happens on successful data submission
     XHR.addEventListener( "load", function(event) {
       const res = event.target.responseText
-      console.log( 'res: ' + res );
+
       if(res === "success") {
-        alert( res );
-        ym(111, 'reachGoal', data.idAndGoal)
+        ym(61997986, 'reachGoal', data.idAndGoal)
+        if(data.idAndGoal === "preza") {
+          window.location.assign("https://drive.google.com/file/d/11mNuA62qrpNGC3qrvrpUjBA_LmahuxMo/view")
+          }
+        modalClose();
+        openModal(null, 'success')
       } else {
-        alert( event.target.responseText );
+        modalClose();
+        openModal(null, 'error')
       }
     } );
 
