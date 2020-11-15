@@ -277,7 +277,7 @@ body.slider__body {
   @apply outline-none
 }
 .invest-pagination .swiper-pagination-bullet-active{
-  @apply bg-white
+  @apply bg-white shadow
 }
 
 .gallery-thumbs .swiper-slide-thumb-active > div{
