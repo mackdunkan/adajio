@@ -1,76 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8f3155f-1604-4083-8696-0cc3a483f8af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/adagio/adagio_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/adagio/adagio_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/adagio/adagio_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/adagio/adagio_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/bar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/beach.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/cafe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/childish.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/conference.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/fitness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/golf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/medical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/meeting.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/pool.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/restaurant.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/sauna.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/spa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/supermarket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/yard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/apartments_img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/apartments_img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/deluxe-1_img_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/deluxe-1_img_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/deluxe-1_map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/deluxe-2_img_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/deluxe-2_img_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/deluxe-2_map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/french_img_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/french_img_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/french_map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/logotype.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/terrace_img_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/terrace_img_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/terrace_map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/bg__footer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/bg__home.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/download/form.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/investments/terrace.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/section/map/map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/page-slide/slide.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/page-slide/slide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="e5c0962d-8400-4d06-98fb-445baa975595" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,38 +11,19 @@
     <elmProjects />
     <settings elmCompilerPath="C:\Program Files (x86)\Elm\0.19.1\bin\elm.exe" elmFormatPath="C:\Users\mackdunkan\AppData\Roaming\npm\elm-format.cmd" elmTestPath="C:\Users\mackdunkan\AppData\Roaming\npm\elm-test.cmd" isElmFormatOnSaveEnabled="false" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="tsconfig.json" />
-        <option value="package.json" />
-        <option value="CSS File" />
-        <option value="JavaScript File" />
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
-  <component name="ProjectId" id="1kFReOnbDbSvPBO1O4GqynFZ7q5" />
+  <component name="ProjectId" id="1kIPmtl6BXnIdGbvyyR92WoFRtG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
-    <property name="javascript.nodejs.core.library.typings.version" value="12.19.4" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -120,26 +32,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.elm.workspace.PROJECT_DISCOVERY" value="true" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\work\anton\adajio\assets" />
-      <recent name="E:\work\anton\adajio" />
-    </key>
-  </component>
-  <component name="RunManager" selected="npm.build">
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -153,57 +48,40 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a8f3155f-1604-4083-8696-0cc3a483f8af" name="Default Changelist" comment="" />
-      <created>1605294449415</created>
+      <changelist id="e5c0962d-8400-4d06-98fb-445baa975595" name="Default Changelist" comment="" />
+      <created>1605385294873</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605294449415</updated>
-      <workItem from="1605294451017" duration="15606000" />
-      <workItem from="1605346945312" duration="19146000" />
+      <updated>1605385294873</updated>
+      <workItem from="1605385297363" duration="2564000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="WindowStateProjectService">
-    <state width="1688" height="190" key="GridCell.Tab.0.bottom" timestamp="1605391449576">
+    <state width="1688" height="398" key="GridCell.Tab.0.bottom" timestamp="1605387881629">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1688" height="190" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605391449576" />
-    <state width="1688" height="190" key="GridCell.Tab.0.center" timestamp="1605391449576">
+    <state width="1688" height="398" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605387881629" />
+    <state width="1688" height="398" key="GridCell.Tab.0.center" timestamp="1605387881629">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1688" height="190" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605391449576" />
-    <state width="1688" height="190" key="GridCell.Tab.0.left" timestamp="1605391449576">
+    <state width="1688" height="398" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605387881629" />
+    <state width="1688" height="398" key="GridCell.Tab.0.left" timestamp="1605387881629">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1688" height="190" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605391449576" />
-    <state width="1688" height="190" key="GridCell.Tab.0.right" timestamp="1605391449576">
+    <state width="1688" height="398" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605387881629" />
+    <state width="1688" height="398" key="GridCell.Tab.0.right" timestamp="1605387881629">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1688" height="190" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605391449576" />
-    <state width="498" height="508" key="SwitcherDM" timestamp="1605347314305">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state width="498" height="508" key="SwitcherDM/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605347314305" />
+    <state width="1688" height="398" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605387881629" />
   </component>
 </project>

@@ -1,34 +1,24 @@
 {
-  "name": "adajio",
-  "version": "1.0.0",
-  "description": "верстка(): ак-адажио-сочи",
-  "main": "index.js",
+  "name": "G",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": "",
+  "license": "",
+  "author": "mackdunkan@gmail.com",
   "scripts": {
-    "css": "postcss css/tailwind.css -o assets/css/style.css",
-    "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
-    "watch:css": "onchange 'src/css' -- npm run css",
-    "start": "npm run -p serve watch:css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mackdunkan/adajio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mackdunkan/adajio/issues"
-  },
-  "homepage": "https://github.com/mackdunkan/adajio#readme",
-  "dependencies": {
-    "autoprefixer": "^10.0.2",
-    "postcss": "^8.1.7",
-    "postcss-cli": "^8.2.0",
-    "swiper": "^6.3.5",
-    "tailwindcss": "^1.9.6"
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.13",
-    "onchange": "^7.1.0"
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "js": "^0.1.0",
+    "postcss-cli": "^6.1.2",
+    "swiper": "^6.3.5",
+    "tailwindcss": "^1.8.4"
   }
 }

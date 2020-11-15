@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/adajio.iml" filepath="$PROJECT_DIR$/.idea/adajio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/adagio.iml" filepath="$PROJECT_DIR$/.idea/adagio.iml" />
     </modules>
   </component>
 </project>
