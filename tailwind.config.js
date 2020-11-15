@@ -16,6 +16,9 @@ module.exports = {
       height: {
         '420': '420px'
       },
+      maxWidth: {
+        '600': '600px'
+      },
       inset: {
         '1/2': '50%'
       }

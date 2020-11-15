@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e5c0962d-8400-4d06-98fb-445baa975595" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,27 @@
     <property name="org.elm.workspace.PROJECT_DISCOVERY" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -73,6 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -87,6 +109,7 @@
       <updated>1605385294873</updated>
       <workItem from="1605385297363" duration="2564000" />
       <workItem from="1605399570439" duration="1035000" />
+      <workItem from="1605451147102" duration="7831000" />
     </task>
     <servers />
   </component>
@@ -103,23 +126,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1688" height="398" key="GridCell.Tab.0.bottom" timestamp="1605387881629">
+    <state width="1674" height="395" key="GridCell.Tab.0.bottom" timestamp="1605460869991">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1688" height="398" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605387881629" />
-    <state width="1688" height="398" key="GridCell.Tab.0.center" timestamp="1605387881629">
+    <state width="1674" height="395" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605460869991" />
+    <state width="1674" height="395" key="GridCell.Tab.0.center" timestamp="1605460869991">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1688" height="398" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605387881629" />
-    <state width="1688" height="398" key="GridCell.Tab.0.left" timestamp="1605387881629">
+    <state width="1674" height="395" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605460869991" />
+    <state width="1674" height="395" key="GridCell.Tab.0.left" timestamp="1605460869991">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1688" height="398" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605387881629" />
-    <state width="1688" height="398" key="GridCell.Tab.0.right" timestamp="1605387881629">
+    <state width="1674" height="395" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605460869991" />
+    <state width="1674" height="395" key="GridCell.Tab.0.right" timestamp="1605460869991">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1688" height="398" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605387881629" />
+    <state width="1674" height="395" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605460869991" />
   </component>
 </project>
