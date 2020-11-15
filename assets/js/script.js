@@ -3,11 +3,8 @@ function changeAtiveTab(event,tabID){
     while(element.nodeName !== "BUTTON"){
         element = element.parentNode;
     }
-    let ulElement;
     ulElement = element.parentNode.parentNode;
-    let aElements;
     aElements = ulElement.querySelectorAll("li > button");
-    let tabContents;
     tabContents = document.getElementById("tabs-id").querySelectorAll(".tab-content > div");
     for(let i = 0 ; i < aElements.length; i++){
         aElements[i].classList.remove("text-white");

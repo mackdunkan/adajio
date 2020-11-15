@@ -20,10 +20,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8f3155f-1604-4083-8696-0cc3a483f8af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/adagio/adagio_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/adagio/adagio_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/adagio/adagio_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/adagio/adagio_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/bar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/beach.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/cafe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/childish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/conference.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/fitness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/golf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/medical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/meeting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/pool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/restaurant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/sauna.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/spa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/supermarket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/advantage/yard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/apartments_img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/apartments_img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/deluxe-1_img_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/deluxe-1_img_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/deluxe-1_map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/deluxe-2_img_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/deluxe-2_img_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/deluxe-2_map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/french_img_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/french_img_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/french_map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/logotype.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/terrace_img_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/terrace_img_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/apartments/terrace_map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/bg__footer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/bg__home.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/download/form.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/investments/terrace.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/section/map/map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/page-slide/slide.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/page-slide/slide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +86,8 @@
         <option value="tsconfig.json" />
         <option value="package.json" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -64,7 +110,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.4" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -74,10 +120,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.elm.workspace.PROJECT_DISCOVERY" value="true" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\anton\adajio\assets" />
       <recent name="E:\work\anton\adajio" />
     </key>
   </component>
@@ -104,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -118,7 +166,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605294449415</updated>
       <workItem from="1605294451017" duration="15606000" />
-      <workItem from="1605346945312" duration="10548000" />
+      <workItem from="1605346945312" duration="19146000" />
     </task>
     <servers />
   </component>
@@ -137,22 +185,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1676" height="190" key="GridCell.Tab.0.bottom" timestamp="1605355501877">
+    <state width="1688" height="190" key="GridCell.Tab.0.bottom" timestamp="1605391449576">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1676" height="190" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605355501877" />
-    <state width="1676" height="190" key="GridCell.Tab.0.center" timestamp="1605355501877">
+    <state width="1688" height="190" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605391449576" />
+    <state width="1688" height="190" key="GridCell.Tab.0.center" timestamp="1605391449576">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1676" height="190" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605355501877" />
-    <state width="1676" height="190" key="GridCell.Tab.0.left" timestamp="1605355501876">
+    <state width="1688" height="190" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605391449576" />
+    <state width="1688" height="190" key="GridCell.Tab.0.left" timestamp="1605391449576">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1676" height="190" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605355501876" />
-    <state width="1676" height="190" key="GridCell.Tab.0.right" timestamp="1605355501877">
+    <state width="1688" height="190" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605391449576" />
+    <state width="1688" height="190" key="GridCell.Tab.0.right" timestamp="1605391449576">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1676" height="190" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605355501877" />
+    <state width="1688" height="190" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605391449576" />
     <state width="498" height="508" key="SwitcherDM" timestamp="1605347314305">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>

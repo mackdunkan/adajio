@@ -4,8 +4,10 @@
   "description": "верстка(): ак-адажио-сочи",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/assets/css/style.css",
-    "start": "live-server public"
+    "css": "postcss css/tailwind.css -o assets/css/style.css",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
+    "watch:css": "onchange 'src/css' -- npm run css",
+    "start": "npm run -p serve watch:css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,11 @@
     "autoprefixer": "^10.0.2",
     "postcss": "^8.1.7",
     "postcss-cli": "^8.2.0",
+    "swiper": "^6.3.5",
     "tailwindcss": "^1.9.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "onchange": "^7.1.0"
   }
 }
