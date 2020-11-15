@@ -149,42 +149,42 @@
   <section id="apartments" class="flex items-center bg-white">
     <div class="container mx-auto relative">
       <h2 class="text-6xl font-medium">Виды апартаментов</h2>
-      <div class="mt-8">
+      <div class="mt-8 shadow-lg">
         <div class="flex flex-wrap" id="tabs-id">
           <div class="w-full">
-            <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
-              <li class="-mb-px mr-2 last:mr-0 text-center">
-                <button class="text-xs font-bold px-2 py-3 shadow-lg rounded block leading-normal text-white bg-red focus:outline-none"
+            <ul class="grid grid-cols-5 mb-0 list-none flex-row">
+              <li class="text-center">
+                <button class="h-full w-full text-xs font-bold px-2 py-3 shadow-lg block leading-normal text-red bg-white border-t-2 border-red hover:border-red hover:text-red focus:outline-none"
                         onclick="changeAtiveTab(event,'tab-apartments')">
                   Апартаменты
                 </button>
               </li>
-              <li class="-mb-px mr-2 last:mr-0 text-center">
-                <button class="text-xs font-bold px-2 py-3 shadow-lg rounded block leading-normal text-red bg-white focus:outline-none"
+              <li class="text-center">
+                <button class="h-full w-full text-xs font-bold px-2 py-3 shadow-lg block leading-normal text-gray-800 bg-gray-100 border-t-2 border-gray-600 hover:border-red hover:text-red focus:outline-none"
                         onclick="changeAtiveTab(event,'tab-french')">
                   Студия с французским балконом
                 </button>
               </li>
-              <li class="-mb-px mr-2 last:mr-0  text-center">
-                <button class="text-xs font-bold px-2 py-3 shadow-lg rounded block leading-normal text-red bg-white focus:outline-none"
+              <li class="text-center">
+                <button class="h-full w-full text-xs font-bold px-2 py-3 shadow-lg block leading-normal text-gray-800 bg-gray-100 border-t-2 border-gray-600 hover:border-red hover:text-red focus:outline-none"
                         onclick="changeAtiveTab(event,'tab-terrace')">
                   Апартамент с одной спальней и террасой
                 </button>
               </li>
-              <li class="-mb-px mr-2 last:mr-0 text-center">
-                <button class="text-xs font-bold px-2 py-3 shadow-lg rounded block leading-normal text-red bg-white focus:outline-none"
+              <li class="text-center">
+                <button class="h-full w-full text-xs font-bold px-2 py-3 shadow-lg block leading-normal text-gray-800 bg-gray-100 border-t-2 border-gray-600 hover:border-red hover:text-red focus:outline-none"
                         onclick="changeAtiveTab(event,'tab-deluxe-2')">
                   Апартаменты DELUXE с двумя спальнями
                 </button>
               </li>
-              <li class="-mb-px mr-2 last:mr-0 text-center">
-                <button class="text-xs font-bold px-2 py-3 shadow-lg rounded block leading-normal text-red bg-white focus:outline-none"
+              <li class="text-center">
+                <button class="h-full w-full text-xs font-bold px-2 py-3 shadow-lg block leading-normal text-gray-800 bg-gray-100 border-t-2 border-gray-600 hover:border-red hover:text-red focus:outline-none"
                         onclick="changeAtiveTab(event,'tab-deluxe-1')">
                   Апартаменты DELUXE с одной спальнями
                 </button>
               </li>
             </ul>
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full">
               <div class="px-4 py-5 flex-auto">
                 <div class="tab-content tab-space">
                   <div class="block" id="tab-apartments">
@@ -803,17 +803,20 @@
     let tabContents;
     tabContents = document.getElementById("tabs-id").querySelectorAll(".tab-content > div");
     for(let i = 0 ; i < aElements.length; i++){
-      aElements[i].classList.remove("text-white");
-      aElements[i].classList.remove("bg-red");
-      aElements[i].classList.add("text-red");
-      aElements[i].classList.add("bg-white");
+      aElements[i].classList.remove("text-red");
+      aElements[i].classList.remove("bg-white");
+      aElements[i].classList.remove("border-red");
+      aElements[i].classList.add("text-gray-800");
+      aElements[i].classList.add("border-gray-600");
+      aElements[i].classList.add("bg-gray-100");
       tabContents[i].classList.add("hidden");
       tabContents[i].classList.remove("block");
     }
-    element.classList.remove("text-red");
-    element.classList.remove("bg-white");
-    element.classList.add("text-white");
-    element.classList.add("bg-red");
+    element.classList.remove("text-gray-800");
+    element.classList.remove("bg-gray-400");
+    element.classList.add("text-red");
+    element.classList.add("border-red");
+    element.classList.add("bg-white");
     document.getElementById(tabID).classList.remove("hidden");
     document.getElementById(tabID).classList.add("block");
   }
