@@ -17,3 +17,7 @@ B
 tailwind.config.js,0\9\0918cbb76f2c44f223706cec9d31a32cd1177ce4
 ?
 dist/index.html,8\3\83c3885e754cb61b14e68e2ab17c1c37c43a2f3f
+F
+js/page-slide/slide.js,a\d\ad0066c14c52bf64965f7f1b5898769d69b2085e
+=
+sendEmail.php,0\1\01fd8d9ea0eb6f5754d8a17957135a0cb9787aca

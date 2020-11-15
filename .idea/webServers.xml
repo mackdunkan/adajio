@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2004f387-c082-4fe8-b425-0ef1a7c6c813" name="adagio" url="http://coil.server-dns.name">
+        <fileTransfer rootFolder="/www/ak-adagio-sochi.ru" host="coil.server-dns.name" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

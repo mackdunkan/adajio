@@ -20,9 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c0962d-8400-4d06-98fb-445baa975595" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/sendEmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/83c3885e754cb61b14e68e2ab17c1c37c43a2f3f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/83c3885e754cb61b14e68e2ab17c1c37c43a2f3f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/dae13fd6f331d1c91ab58b06e81d05cb8958bfb1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/dae13fd6f331d1c91ab58b06e81d05cb8958bfb1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +51,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -58,6 +67,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.elm.workspace.PROJECT_DISCOVERY" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.start">
@@ -93,9 +103,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -110,6 +120,8 @@
       <workItem from="1605385297363" duration="2564000" />
       <workItem from="1605399570439" duration="1035000" />
       <workItem from="1605451147102" duration="7831000" />
+      <workItem from="1605461297230" duration="10319000" />
+      <workItem from="1605471798150" duration="3680000" />
     </task>
     <servers />
   </component>
@@ -129,21 +141,53 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1674" height="395" key="GridCell.Tab.0.bottom" timestamp="1605460869991">
+    <state x="459" y="358" key="#Deployment" timestamp="1605471884718">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="395" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605460869991" />
-    <state width="1674" height="395" key="GridCell.Tab.0.center" timestamp="1605460869991">
+    <state x="459" y="358" key="#Deployment/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605471884718" />
+    <state x="575" y="436" key="#Servers" timestamp="1605470558174">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="395" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605460869991" />
-    <state width="1674" height="395" key="GridCell.Tab.0.left" timestamp="1605460869991">
+    <state x="575" y="436" key="#Servers/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605470558174" />
+    <state x="613" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605471719653">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="395" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605460869991" />
-    <state width="1674" height="395" key="GridCell.Tab.0.right" timestamp="1605460869991">
+    <state x="613" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605471719653" />
+    <state x="100" y="100" width="1534" height="1200" key="DiffContextDialog" timestamp="1605470903119">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="395" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605460869991" />
+    <state x="100" y="100" width="1534" height="1200" key="DiffContextDialog/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605470903119" />
+    <state x="647" y="455" key="FileChooserDialogImpl" timestamp="1605470410678">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="647" y="455" key="FileChooserDialogImpl/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605470410678" />
+    <state width="837" height="391" key="GridCell.Tab.0.bottom" timestamp="1605473808351">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="837" height="391" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605473808351" />
+    <state width="837" height="391" key="GridCell.Tab.0.center" timestamp="1605473808351">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="837" height="391" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605473808351" />
+    <state width="837" height="391" key="GridCell.Tab.0.left" timestamp="1605473808351">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="837" height="391" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605473808351" />
+    <state width="837" height="391" key="GridCell.Tab.0.right" timestamp="1605473808351">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="837" height="391" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605473808351" />
+    <state x="368" y="345" key="SettingsEditor" timestamp="1605472046937">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="368" y="345" key="SettingsEditor/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605472046937" />
+    <state x="723" y="599" key="WebDeployment.AddServerDialog.v.1" timestamp="1605470588486">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="723" y="599" key="WebDeployment.AddServerDialog.v.1/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605470588486" />
+    <state x="683" y="430" key="ftp.server.browser" timestamp="1605470629468">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="683" y="430" key="ftp.server.browser/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605470629468" />
   </component>
 </project>
