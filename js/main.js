@@ -91,24 +91,66 @@ window.addEventListener( "load", function () {
   }
 
   // Access the form element...
-  const form = document.getElementById( "form" );
+  const formModal = document.getElementById( "form-modal" );
+  const formDownload = document.getElementById( "form-download" );
 
-  // ...and take over its submit event.
-  form.addEventListener( "submit", function ( event ) {
-    event.preventDefault();
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
+  formData(formModal);
+  formData(formDownload);
 
-    sendData({
-      phone: form.elements["phone"].value,
-      idAndGoal: form.elements["goal"].value,
-      location: queryString,
-      utm_source: urlParams.get("utm_source"),
-      utm_medium: urlParams.get("utm_medium"),
-      utm_campaign: urlParams.get("utm_campaign"),
-      utm_content: urlParams.get("utm_content"),
-      utm_term: urlParams.get("utm_term"),
-    });
-  } );
+  function formData(form) {
+    form.addEventListener( "submit", function ( event ) {
+      event.preventDefault();
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+
+      sendData({
+        phone: form.elements["phone"].value,
+        idAndGoal: form.elements["goal"].value,
+        location: queryString,
+        utm_source: urlParams.get("utm_source"),
+        utm_medium: urlParams.get("utm_medium"),
+        utm_campaign: urlParams.get("utm_campaign"),
+        utm_content: urlParams.get("utm_content"),
+        utm_term: urlParams.get("utm_term"),
+      });
+    } );
+  }
+  // mask phone
+  // https://javascript.ru/forum/dom-window/63870-kak-sdelat-masku-telefona-v-input-c-7-___-bez-jquery-5.html
+
+  [].forEach.call( document.querySelectorAll('.phone'), function(input) {
+    let keyCode;
+    function mask(event) {
+      event.key && (keyCode = event.key);
+      let pos = this.selectionStart;
+      if (pos < 3) event.preventDefault();
+      let matrix = "+7 (___) ___ ____",
+        i = 0,
+        def = matrix.replace(/\D/g, ""),
+        val = this.value.replace(/\D/g, ""),
+        new_value = matrix.replace(/[_\d]/g, function(a) {
+          return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+        });
+      i = new_value.indexOf("_");
+      if (i != -1) {
+        i < 5 && (i = 3);
+        new_value = new_value.slice(0, i)
+      }
+      let reg = matrix.substr(0, this.value.length).replace(/_+/g,
+        function(a) {
+          return "\\d{1," + a.length + "}"
+        }).replace(/[+()]/g, "\\$&");
+      reg = new RegExp("^" + reg + "$");
+      if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+      if (event.type == "blur" && this.value.length < 5)  this.value = ""
+    }
+
+    input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, false);
+    input.addEventListener("keydown", mask, false)
+
+  })
+
 } );
 

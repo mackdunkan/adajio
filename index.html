@@ -381,15 +381,14 @@
     <div class="container mx-auto relative">
       <div class="grid grid-cols-2 gap-8">
         <div class="flex items-center">
-          <h2 class="text-6xl font-bold text-white">Скачайте подробную презентацию об апарт-отеле Adagio в 1
-            клик</h2>
+          <h2 class="text-6xl font-bold text-white">Скачайте подробную презентацию об апарт-отеле Adagio в 1 клик</h2>
         </div>
         <div>
           <div class="px-10">
             <img class="mx-auto" src="img/section/download/form.png" alt="">
-            <form id="form-download" class="mt-8" action="#" method="POST">
+            <form class="mt-8" id="form-download">
               <div class="rounded shadow-xl">
-                <input name="text" type="email" required
+                <input name="phone" type="text" required
                        class="phone appearance-none relative block w-full px-3 py-4 border border-gray-300 placeholder-gray-500 text-gray-900 rounded focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
                        placeholder="Телефон *">
               </div>
@@ -626,7 +625,7 @@
         </button>
       <!--body-->
       <div class="relative p-12 flex-auto">
-        <form id="form">
+        <form id="form-modal">
           <div id="callback" class="header-modal hidden">
             <h2 class="text-black text-5xl font-bold text-center leading-none">Закажите обратный звонок от нашего специалиста</h2>
             <p class="text-2xl mt-8 leading-none">Мы свяжемся с вами и подробно расскажем о выгодах нашего комплекса. </p>
