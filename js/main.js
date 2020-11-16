@@ -1,7 +1,23 @@
 import Swiper from 'swiper';
 import swiper from 'swiper/bundle';
-import 'swiper/swiper-bundle.css';
-import slider from './page-slide/slide'
+// import 'swiper/swiper-bundle.css';
+// import slider from './page-slide/slide'
+
+const breakpoint = window.matchMedia( '(max-width:767px)' );
+
+const breakpointChecker = function() {
+  // if larger viewport and multi-row layout needed
+  if ( breakpoint.matches === true ) {
+    // clean up old instances and inline styles when available
+    // if ( swiperPage !== undefined ) swiperPage.destroy( true, true );
+    // or/and do nothing
+    return;
+    // else if a small viewport and single column layout needed
+  } else if ( breakpoint.matches === false ) {
+    // fire small viewport version of swiper
+    return enableSwiper();
+  }
+};
 
 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
@@ -14,6 +30,25 @@ ym(61997986, "init", {
   webvisor:true
 });
 
+const enableSwiper = function() {
+  let swiperPage = new Swiper('.slides-page', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    mousewheel: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    observer: true,
+    observeParents: true,
+    parallax:true,
+  });
+};
+
+// keep an eye on viewport size changes
+breakpoint.addListener(breakpointChecker);
+// kickstart
+breakpointChecker();
 
 var mySwiper = new Swiper ('.invest-slide', {
   // Optional parameters
@@ -37,14 +72,29 @@ var mySwiper = new Swiper ('.invest-slide', {
 
 
 
-const mySlider = slider('.slides');
+// const mySlider = slider('.slides');
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 10,
-  slidesPerView: 7,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
+  slidesPerView: 2,
+  breakpoints: {
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 10,
+    },
+    1280: {
+      slidesPerView: 7,
+      spaceBetween: 10,
+    }
+  }
 });
 var galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 10,

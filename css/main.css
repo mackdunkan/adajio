@@ -283,5 +283,5 @@ body.slider__body {
 .gallery-thumbs .swiper-slide-thumb-active > div{
   @apply bg-opacity-0
 }
-
+@import '~/node_modules/swiper/swiper-bundle.css';
 @tailwind utilities;
