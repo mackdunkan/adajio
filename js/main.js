@@ -116,11 +116,10 @@ window.addEventListener( "load", function () {
 
     // Define what happens on successful data submission
     XHR.addEventListener( "load", function(event) {
-      const res = "success"
+      const res = event.target.responseText
       const goal = () => (breakpoint.matches === false) ? data.idAndGoal : `${data.idAndGoal}_mobile`
 
       if(res === "success") {
-        console.log(goal());
         ym(61997986, 'reachGoal', goal())
         if(data.idAndGoal === "preza" || data.idAndGoal === "timeout") {
           window.open('https://drive.google.com/file/d/11mNuA62qrpNGC3qrvrpUjBA_LmahuxMo/view', '_blank');
