@@ -709,6 +709,10 @@
           <div id="ekskursiya" class="header-modal hidden">
             <h2 class="text-black text-5xl font-bold text-center leading-none">Запишитесь на экскурсию</h2>
           </div>
+          <div id="timeout" class="header-modal hidden">
+            <h2 class="text-black text-5xl font-bold text-center leading-none">Скачайте презентацию АК ADAGIO в 1 клик</h2>
+            <p class="text-2xl mt-8 leading-none">Вам откроется презентация доступная для загрузки. <br> Ссылки и фотографии мы пришлем на WhatsApp.</p>
+          </div>
           <div class="mt-8">
             <div class="rounded shadow-xl">
               <input name="phone" type="text" required
@@ -791,6 +795,7 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <script>
+  setTimeout(openModal, 60000, "timeout");
   const changeAtiveTab = (event,tabID) => {
     let element = event.target;
     while(element.nodeName !== "BUTTON"){
@@ -820,7 +825,6 @@
     document.getElementById(tabID).classList.remove("hidden");
     document.getElementById(tabID).classList.add("block");
   }
-
   const modalClose = (modalID = "modal") => {
     document.getElementById(modalID).classList.add("hidden")
     document.getElementById("modal-backdrop").classList.add("hidden");
@@ -829,8 +833,7 @@
       document.getElementById("goalModalForm").value = "";
     });
   }
-
-  const openModal = (ID = null, modalID = "modal") => {
+  function openModal(ID = null, modalID = "modal"){
     if (ID){
       document.getElementById(ID).classList.remove("hidden")
       document.getElementById("goalModalForm").value = ID;
