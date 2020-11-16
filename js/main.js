@@ -116,12 +116,14 @@ window.addEventListener( "load", function () {
 
     // Define what happens on successful data submission
     XHR.addEventListener( "load", function(event) {
-      const res = event.target.responseText
+      const res = "success"
+      const goal = () => (breakpoint.matches === false) ? data.idAndGoal : `${data.idAndGoal}_mobile`
 
       if(res === "success") {
-        ym(61997986, 'reachGoal', data.idAndGoal)
-        if(data.idAndGoal === "preza") {
-          window.location.assign("https://drive.google.com/file/d/11mNuA62qrpNGC3qrvrpUjBA_LmahuxMo/view")
+        console.log(goal());
+        ym(61997986, 'reachGoal', goal())
+        if(data.idAndGoal === "preza" || data.idAndGoal === "timeout") {
+          window.open('https://drive.google.com/file/d/11mNuA62qrpNGC3qrvrpUjBA_LmahuxMo/view', '_blank');
           }
         modalClose();
         openModal(null, 'success')
@@ -170,42 +172,5 @@ window.addEventListener( "load", function () {
       });
     } );
   }
-  // mask phone
-  // https://javascript.ru/forum/dom-window/63870-kak-sdelat-masku-telefona-v-input-c-7-___-bez-jquery-5.html
-
-  [].forEach.call( document.querySelectorAll('.phone'), function(input) {
-    let keyCode;
-    function mask(event) {
-      event.key && (keyCode = event.key);
-      let pos = this.selectionStart;
-      if (pos < 3) event.preventDefault();
-      let matrix = "+7 (___) ___ ____",
-        i = 0,
-        def = matrix.replace(/\D/g, ""),
-        val = this.value.replace(/\D/g, ""),
-        new_value = matrix.replace(/[_\d]/g, function(a) {
-          return i < val.length ? val.charAt(i++) || def.charAt(i) : a
-        });
-      i = new_value.indexOf("_");
-      if (i != -1) {
-        i < 5 && (i = 3);
-        new_value = new_value.slice(0, i)
-      }
-      let reg = matrix.substr(0, this.value.length).replace(/_+/g,
-        function(a) {
-          return "\\d{1," + a.length + "}"
-        }).replace(/[+()]/g, "\\$&");
-      reg = new RegExp("^" + reg + "$");
-      if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
-      if (event.type == "blur" && this.value.length < 5)  this.value = ""
-    }
-
-    input.addEventListener("input", mask, false);
-    input.addEventListener("focus", mask, false);
-    input.addEventListener("blur", mask, false);
-    input.addEventListener("keydown", mask, false)
-
-  })
-
 } );
 

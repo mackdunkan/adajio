@@ -424,7 +424,7 @@
               <img class="mx-auto md:max-h-320 xl:max-h-fit" src="img/section/download/form.png" alt="">
               <form class="mt-8" id="form-download">
                 <div class="rounded shadow-xl">
-                  <input name="phone" type="text" required
+                  <input name="phone" type="tel" required pattern="^[0-9]+$"
                          class="phone appearance-none relative block w-full px-3 py-4 border border-gray-300 placeholder-gray-500 text-gray-900 rounded focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
                          placeholder="Телефон *">
                 </div>
@@ -720,7 +720,7 @@
           </div>
           <div class="mt-8">
             <div class="rounded shadow-xl">
-              <input name="phone" type="text" required
+              <input name="phone" type="tel" required pattern="^[0-9]+$"
                      class="phone appearance-none relative block w-full px-3 py-4 border border-gray-300 placeholder-gray-500 text-gray-900 rounded focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
                      placeholder="Телефон *">
             </div>
@@ -737,7 +737,7 @@
             </div>
             <input type="hidden" id="goalModalForm" name="goal">
             <div class="mt-6">
-              <button type="submit"
+              <button id="button_modal" type="submit"
                       class="bg-red-button px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl w-full hover:bg-red-h">
                 Перезвоните мне
               </button>
@@ -861,11 +861,35 @@
       });
       document.getElementById(ID).classList.remove("hidden")
       document.getElementById("goalModalForm").value = ID;
+      setValButtonModal(ID);
     }
     document.getElementById(modalID).classList.remove("hidden");
     document.getElementById("modal-backdrop").classList.remove("hidden");
     document.getElementById(modalID).classList.add("flex");
     document.getElementById("modal-backdrop").classList.add("flex");
+  }
+
+  const setValButtonModal = (ID) => {
+    switch (ID) {
+      case "vigoda":
+        document.getElementById("button_modal").innerHTML = "Получить расчет";
+        break;
+      case "vibrat":
+        document.getElementById("button_modal").innerHTML = "Выбрать апартамент";
+        break;
+      case "accor":
+        document.getElementById("button_modal").innerHTML = "Скачать презентацию";
+        break;
+      case "dohod":
+        document.getElementById("button_modal").innerHTML = "Получить расчет";
+        break;
+      case "ekskursiya":
+        document.getElementById("button_modal").innerHTML = "Записаться";
+        break;
+      case "timeout":
+        document.getElementById("button_modal").innerHTML = "Скачать презентацию";
+        break;
+    }
   }
 </script>
 </body>
