@@ -5,13 +5,18 @@ module.exports = {
   },
   purge: [],
   theme: {
+    fontFamily: {
+      'norms': ['TT Norms', 'sans-serif'],
+    },
     container: {
       padding: '1rem',
     },
     extend: {
       colors: {
         'red': "#de2847",
-        'red-h': "#e53734"
+        'red-h': "#e53734",
+        "red-button": "#e53734",
+        'a-blue' : "#19b1e6"
       },
       height: {
         '420': '420px'

@@ -267,7 +267,7 @@ body.slider__body {
   padding: 0;
   overflow: hidden;
 }
-
+@import url("~/font/stylesheet.css");
 @tailwind base;
 @tailwind components;
 .invest-pagination span{
@@ -282,6 +282,15 @@ body.slider__body {
 
 .gallery-thumbs .swiper-slide-thumb-active > div{
   @apply bg-opacity-0
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  margin: 10px 0!important;
+  background: initial;
+  @apply opacity-100 rounded-full h-3 w-3 block cursor-pointer border border-white
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: white;
 }
 @import '~/node_modules/swiper/swiper-bundle.css';
 @tailwind utilities;
