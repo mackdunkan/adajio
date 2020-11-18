@@ -20,8 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c0962d-8400-4d06-98fb-445baa975595" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/dae13fd6f331d1c91ab58b06e81d05cb8958bfb1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/dae13fd6f331d1c91ab58b06e81d05cb8958bfb1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f6013a00b362253c64368d6eebc50ea2131754e2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f6013a00b362253c64368d6eebc50ea2131754e2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +59,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
@@ -116,10 +121,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +144,14 @@
       <workItem from="1605512766181" duration="2712000" />
       <workItem from="1605521338116" duration="10433000" />
       <workItem from="1605532680400" duration="21110000" />
+      <workItem from="1605613600939" duration="9462000" />
+      <workItem from="1605624866482" duration="264000" />
+      <workItem from="1605625239010" duration="679000" />
+      <workItem from="1605628738020" duration="2279000" />
+      <workItem from="1605695147691" duration="23000" />
+      <workItem from="1605695382150" duration="6716000" />
+      <workItem from="1605721273710" duration="18000" />
+      <workItem from="1605721336594" duration="1114000" />
     </task>
     <servers />
   </component>
@@ -174,26 +187,26 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="100" y="100" width="1534" height="1200" key="DiffContextDialog/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605470903119" />
-    <state x="647" y="455" key="FileChooserDialogImpl" timestamp="1605516184065">
+    <state x="647" y="455" key="FileChooserDialogImpl" timestamp="1605632965848">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="647" y="455" key="FileChooserDialogImpl/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605516184065" />
-    <state width="1690" height="385" key="GridCell.Tab.0.bottom" timestamp="1605555696765">
+    <state x="647" y="455" key="FileChooserDialogImpl/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605632965848" />
+    <state width="1674" height="384" key="GridCell.Tab.0.bottom" timestamp="1605703108230">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1690" height="385" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605555696765" />
-    <state width="1690" height="385" key="GridCell.Tab.0.center" timestamp="1605555696765">
+    <state width="1674" height="384" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605703108230" />
+    <state width="1674" height="384" key="GridCell.Tab.0.center" timestamp="1605703108230">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1690" height="385" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605555696765" />
-    <state width="1690" height="385" key="GridCell.Tab.0.left" timestamp="1605555696764">
+    <state width="1674" height="384" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605703108230" />
+    <state width="1674" height="384" key="GridCell.Tab.0.left" timestamp="1605703108230">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1690" height="385" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605555696764" />
-    <state width="1690" height="385" key="GridCell.Tab.0.right" timestamp="1605555696765">
+    <state width="1674" height="384" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605703108230" />
+    <state width="1674" height="384" key="GridCell.Tab.0.right" timestamp="1605703108230">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1690" height="385" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605555696765" />
+    <state width="1674" height="384" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605703108230" />
     <state x="368" y="345" key="SettingsEditor" timestamp="1605472046937">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>

@@ -87,15 +87,17 @@
           <p class="text-white font-bold">Наслаждайся!</p>
         </div>
         <div class="mt-8">
-          <h1 class="text-white text-3xl font-bold">Апарт-отель Adagio Le Rond Sochi</h1>
-          <p class="text-white text-lg leading-normal">Adagio Aparthotel - это апартаменты с высокой доходностью и
+          <h1 class="text-center md:text-left text-white text-3xl font-bold">Апарт-отель Adagio Le Rond Sochi</h1>
+          <p class="hidden sm:block text-white text-lg leading-normal xl:pr-48">Adagio Aparthotel - это апартаменты с высокой доходностью и
             высококлассный бренд. Сеть апарт-отелей № 1 в Европе, основана в 2007 году. Имеет более 100 отелей в
             11 странах мира. Находится под управлением французской международной гостиничной сети Accor
             Hotels.</p>
         </div>
-        <button onclick="openModal('vigoda')" class="bg-red-button mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
-          Подробнее о выгоде
-        </button>
+        <div class="flex justify-center sm:justify-start">
+          <button onclick="openModal('vigoda')" class="bg-red-button mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
+            Подробнее о выгоде
+          </button>
+        </div>
       </div>
     </section>
     <section id="adagio" class="swiper-slide page-slide overflow-hidden h-auto md:h-full  flex items-center bg-white">
@@ -111,9 +113,11 @@
               Поиск арендаторов и гостей, взаимодействие с ними и решение всех бытовых вопросов Adagio берет
               на себя.
             </p>
-            <button onclick="openModal('vibrat')" class="bg-red-button mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
-              Выбрать апартаменты
-            </button>
+            <div class="flex justify-center sm:justify-start">
+              <button onclick="openModal('vibrat')" class="bg-red-button mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
+                Выбрать апартаменты
+              </button>
+            </div>
           </div>
           <div class="grid grid-cols-2 gap-4">
             <img class="w-full shadow border-4 border-white" src="img/section/adagio/adagio_1.jpg" alt="">
@@ -126,7 +130,7 @@
     </section>
     <section id="service" class="swiper-slide page-slide overflow-hidden h-auto md:h-full flex items-center relative">
       <div class="md:hidden absolute inset-0 bg-cover bg-center" style="background-image: url(img/section/service/bg_service.jpg)"></div>
-      <div class="hidden md:block absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
       <div class="hidden md:block md:fixed h-full w-full" style="z-index: -99;">
         <iframe class="object-cover" src="https://www.youtube.com/embed/1Le9hBgGy64?mode=opaque&wmode=transparent&autoplay=1&loop=1&controls=0&modestbranding=1&rel=0&autohide=1&showinfo=0&color=white&iv_load_policy=3&theme=light&wmode=transparent&mute=1&playlist=1Le9hBgGy64" frameborder="0" height="100%" width="100%" allow="autoplay"></iframe>
       </div>
@@ -142,53 +146,55 @@
               Это будет не только первый в Сочи, но и первый во всей России апарт-отель мировой сети Accor,
               привлекающий частных инвесторов!
             </p>
-            <button onclick="openModal('accor')" class="bg-red-button mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
-              Подробнее о Accor Hotels
-            </button>
+            <div class="flex justify-center sm:justify-start">
+              <button onclick="openModal('accor')" class="bg-red-button mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
+                Подробнее о Accor Hotels
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section id="apartments" class="swiper-slide page-slide overflow-hidden h-auto md:h-full flex items-center bg-white">
       <div class="container mx-auto py-8 md:py-4 relative">
-        <h2 class="text-5xl leading-none text-center md:text-left sm:text-6xl lg:text-5xl xl:text-6xl font-medium">Виды апартаментов</h2>
-        <div class="mt-8 lg:mt-4 xl:mt-8 shadow-lg">
+        <h2 class="text-5xl leading-none text-center md:text-left sm:text-6xl lg:text-5xl xl:text-5xl font-medium">Виды апартаментов</h2>
+        <div class="mt-8 lg:mt-4 xl:mt-2 shadow-lg">
           <div class="flex flex-wrap" id="tabs-id">
             <div class="w-full">
               <ul class="grid grid-cols-2 sm:grid-cols-5 mb-0 list-none flex-row">
                 <li class="text-center">
-                  <button class="h-full w-full text-xs px-2 py-3 shadow-lg block leading-normal text-red bg-white border-t-2 border-red hover:border-red hover:text-red focus:outline-none"
+                  <button class="h-full w-full text-xs xl:text-lg p-2 shadow-lg block leading-normal text-red bg-white border-t-2 border-red hover:border-red hover:text-red focus:outline-none"
                           onclick="changeAtiveTab(event,'tab-apartments')">
                     Апартаменты
                   </button>
                 </li>
                 <li class="text-center">
-                  <button class="h-full w-full text-xs px-2 py-3 shadow-lg block leading-normal text-gray-800 bg-gray-100 border-t-2 border-gray-600 hover:border-red hover:text-red focus:outline-none"
+                  <button class="h-full w-full text-xs xl:text-lg p-2 shadow-lg block leading-normal text-gray-800 bg-gray-100 border-t-2 border-gray-600 hover:border-red hover:text-red focus:outline-none"
                           onclick="changeAtiveTab(event,'tab-french')">
                     Студия с французским балконом
                   </button>
                 </li>
                 <li class="text-center">
-                  <button class="h-full w-full text-xs px-2 py-3 shadow-lg block leading-normal text-gray-800 bg-gray-100 border-t-2 border-gray-600 hover:border-red hover:text-red focus:outline-none"
+                  <button class="h-full w-full text-xs xl:text-lg p-2 shadow-lg block leading-normal text-gray-800 bg-gray-100 border-t-2 border-gray-600 hover:border-red hover:text-red focus:outline-none"
                           onclick="changeAtiveTab(event,'tab-terrace')">
                     Апартамент с одной спальней и террасой
                   </button>
                 </li>
                 <li class="text-center">
-                  <button class="h-full w-full text-xs px-2 py-3 shadow-lg block leading-normal text-gray-800 bg-gray-100 border-t-2 border-gray-600 hover:border-red hover:text-red focus:outline-none"
+                  <button class="h-full w-full text-xs xl:text-lg p-2 shadow-lg block leading-normal text-gray-800 bg-gray-100 border-t-2 border-gray-600 hover:border-red hover:text-red focus:outline-none"
                           onclick="changeAtiveTab(event,'tab-deluxe-2')">
                     Апартаменты DELUXE с двумя спальнями
                   </button>
                 </li>
                 <li class="text-center col-span-2 sm:col-span-1">
-                  <button class="h-full w-full text-xs px-2 py-3 shadow-lg block leading-normal text-gray-800 bg-gray-100 border-t-2 border-gray-600 hover:border-red hover:text-red focus:outline-none"
+                  <button class="h-full w-full text-xs xl:text-lg p-2 shadow-lg block leading-normal text-gray-800 bg-gray-100 border-t-2 border-gray-600 hover:border-red hover:text-red focus:outline-none"
                           onclick="changeAtiveTab(event,'tab-deluxe-1')">
                     Апартаменты DELUXE с одной спальнями
                   </button>
                 </li>
               </ul>
               <div class="relative flex flex-col min-w-0 break-words bg-white w-full">
-                <div class="px-4 py-5 lg:p-2 xl:px-4 xl:py-5 flex-auto">
+                <div class="px-4 py-5 lg:p-2 xl:px-4 xl:p-2 flex-auto">
                   <div class="tab-content tab-space">
                     <div class="block visible opacity-100 transition-all duration-1000 ease-in-out" id="tab-apartments">
                       <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -205,7 +211,7 @@
                             отдыха, любо передать их в управление апарт-отелю и получать
                             прибыль.
                           </p>
-                          <div class="flex items-center mt-4">
+                          <div class="flex items-center mt-4 xl:mt-2">
                             <img class="mr-2" src="img/section/apartments/icon.png"
                                  alt="">
                             <p class="text-gray-700 leading-none">В каждом апартаменте <br>
@@ -229,7 +235,7 @@
                             <br>
                             Идеально подходит для проживания 2-х человек.
                           </p>
-                          <div class="mt-4">
+                          <div class="mt-4 xl:mt-2">
                             <img class="max-h-400 mx-auto shadow border-4 border-white md:mx-0" src="img/section/apartments/french_map.png" alt="">
                           </div>
                         </div>
@@ -247,7 +253,7 @@
                             <br>
                             В данных апартаментах с комфортом разместится семья из 4-х человек.
                           </p>
-                          <div class="mt-4">
+                          <div class="mt-4 xl:mt-2">
                             <img class="max-h-400 mx-auto shadow border-4 border-white md:mx-0" src="img/section/apartments/terrace_map.png" alt="">
                           </div>
                         </div>
@@ -265,7 +271,7 @@
                             <br>
                             В данных апартаментах с комфортом разместится семья из 4-х человек.
                           </p>
-                          <div class="mt-4">
+                          <div class="mt-4 xl:mt-2">
                             <img class="max-h-400 mx-auto shadow border-4 border-white md:mx-0" src="img/section/apartments/deluxe-2_map.png" alt="">
                           </div>
                         </div>
@@ -283,7 +289,7 @@
                             <br>
                             В данных апартаментах с комфортом разместится семья из 4-х человек.
                           </p>
-                          <div class="mt-4">
+                          <div class="mt-4 xl:mt-2">
                             <img class="max-h-400 mx-auto shadow border-4 border-white md:mx-0" src="img/section/apartments/deluxe-1_map.png" alt="">
                           </div>
                         </div>
@@ -301,9 +307,9 @@
         </div>
       </div>
     </section>
-    <section id="investments" class="swiper-slide page-slide overflow-hidden h-auto md:h-full flex items-center relative"">
+    <section id="investments" class="swiper-slide page-slide overflow-hidden h-auto md:h-full flex items-center relative">
       <div class="md:hidden absolute inset-0 bg-cover bg-center" style="background-image: url(img/section/investments/bg_investments.jpg)"></div>
-      <div class="hidden md:block absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
       <div class="hidden md:block md:fixed h-full w-full" style="z-index: -99;">
         <iframe class="object-cover" src="https://www.youtube.com/embed/iSRzFpQF1PU?mode=opaque&wmode=transparent&autoplay=1&loop=1&controls=0&modestbranding=1&rel=0&autohide=1&showinfo=0&color=white&iv_load_policy=3&theme=light&wmode=transparent&mute=1&playlist=iSRzFpQF1PU" frameborder="0" height="100%" width="100%" allow="autoplay"></iframe>
       </div>
@@ -424,10 +430,10 @@
           </div>
           <div>
             <div class="sm:px-10">
-              <img class="mx-auto md:max-h-320 xl:max-h-fit" src="img/section/download/form.png" alt="">
+              <img class="mx-auto md:max-h-320" src="img/section/download/form.png" alt="">
               <form class="mt-8" id="form-download">
                 <div class="rounded shadow-xl">
-                  <input name="phone" type="tel" required pattern="^[0-9]+$"
+                  <input name="phone" type="tel" required pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
                          class="phone appearance-none relative block w-full px-3 py-4 border border-gray-300 placeholder-gray-500 text-gray-900 rounded focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
                          placeholder="Телефон *">
                 </div>
@@ -464,13 +470,13 @@
     </section>
     <section id="advantage" class="swiper-slide page-slide overflow-hidden h-auto md:h-full  flex items-center bg-center bg-cover"
              style="background-image: url('img/section/bg__home.jpg')">
-      <div class="container mx-auto relative h-full">
-        <div class="grid grid-cols-1 lg:grid-cols-2 h-full">
+      <div class="container mx-auto relative h-full py-8 md:py-0">
+        <div class="grid grid-cols-1 lg:grid-cols-2 h-full py-4 md:py-0">
           <div class="relative bg-white h-full lg:pr-8">
             <div class="absolute insert-0 right-0 bg-white w-full md:w-screen h-full"></div>
             <div class="relative mt-4 pb-8 grid grid-cols-2 sm:grid-cols-3 gap-2 h-full">
               <div class="col-span-2 sm:col-span-3">
-                <h2 class="text-4xl leading-none font-medium text-center sm:text-5xl">Преимущества Adagio</h2>
+                <h2 class="text-4xl leading-none font-medium text-center mb-4 sm:text-5xl md:mb-0">Преимущества Adagio</h2>
               </div>
               <div class="items-center">
                 <img class="mx-auto h-12" src="img/section/advantage/beach.png" alt="">
@@ -481,7 +487,7 @@
                 <p class="mt-4 text-center">Медицинский центр</p>
               </div>
               <div class="items-center">
-                <img class="mx-auto h-12" src="img/section/advantage/beach.png" alt="">
+                <img class="mx-auto h-12" src="img/section/advantage/golf.png" alt="">
                 <p class="mt-4 text-center">Поле для мини-гольфа</p>
               </div>
 
@@ -618,9 +624,10 @@
         </div>
       </div>
     </section>
-    <section id="map" class="swiper-slide page-slide overflow-hidden h-auto md:h-full  flex items-center">
+    <section id="map" class="swiper-slide page-slide overflow-hidden h-auto md:h-full flex items-center bg-white">
       <div class="container mx-auto py-8 md:py-4 relative">
-        <div class="relative">
+        <h2 class="mb-8 text-5xl leading-none font-medium text-center">Расположение апарт-отеля Adagio</h2>
+        <div class="relative xl:mx-24">
           <img class="w-full" src="img/section/map/map.png" alt="">
           <div class="flex justify-center lg:absolute" style=" bottom: 60px; right: 30px;">
             <button onclick="openModal('ekskursiya')" class="bg-red-button mt-4 px-5 py-4 rounded text-white text-xl font-bold leading-none shadow-xl hover:bg-red-h" type="button">
@@ -678,11 +685,11 @@
       </div>
     </section>
   </div>
-  <div class="swiper-pagination p-2 bg-black bg-opacity-50 rounded-full"></div>
+  <div class="swiper-pagination hidden md:block p-2 bg-black bg-opacity-50 rounded-full"></div>
 </div>
 
 <!--modal-->
-<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal">
+<div class="modal hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal">
   <div class="relative w-auto my-6 mx-auto max-w-3xl">
     <!--content-->
     <div class="max-w-600 border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
@@ -723,7 +730,7 @@
           </div>
           <div class="mt-8">
             <div class="rounded shadow-xl">
-              <input name="phone" type="tel" required pattern="^[0-9]+$"
+              <input name="phone" type="tel" required pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
                      class="phone appearance-none relative block w-full px-3 py-4 border border-gray-300 placeholder-gray-500 text-gray-900 rounded focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
                      placeholder="Телефон *">
             </div>
@@ -752,7 +759,7 @@
   </div>
 </div>
 
-<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="success">
+<div class="modal hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="success">
   <div class="relative w-auto my-6 mx-auto max-w-3xl">
     <!--content-->
     <div class="max-w-600 border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
@@ -771,7 +778,7 @@
   </div>
 </div>
 
-<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="error">
+<div class="modal hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="error">
   <div class="relative w-auto my-6 mx-auto max-w-3xl">
     <!--content-->
     <div class="max-w-600 border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
@@ -795,7 +802,6 @@
 
 <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-backdrop"></div>
 <!--// modal-->
-
 
 <!-- Add your site or application content here -->
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>

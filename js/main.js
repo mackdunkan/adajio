@@ -33,6 +33,8 @@ ym(61997986, "init", {
 const enableSwiper = function() {
   let swiperPage = new Swiper('.slides-page', {
     direction: 'vertical',
+    //effect: 'fade',
+    speed: 600,
     slidesPerView: 1,
     mousewheel: true,
     pagination: {
@@ -98,6 +100,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 });
 var galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 10,
+  loop: true,
   navigation: {
     nextEl: '.gallery-button-next',
     prevEl: '.gallery-button-prev',
@@ -110,7 +113,6 @@ var galleryTop = new Swiper('.gallery-top', {
 window.addEventListener( "load", function () {
   function sendData(data) {
     const XHR = new XMLHttpRequest();
-
     // Bind the FormData object and the form element
     // const FD = new FormData( data );
 
@@ -122,7 +124,7 @@ window.addEventListener( "load", function () {
       if(res === "success") {
         ym(61997986, 'reachGoal', goal())
         if(data.idAndGoal === "preza" || data.idAndGoal === "timeout") {
-          window.open('https://drive.google.com/file/d/11mNuA62qrpNGC3qrvrpUjBA_LmahuxMo/view', '_blank');
+          window.open('https://drive.google.com/file/d/1i9O7I3VtoB4-6n8MWgMcXxdof7EF3XzX/view', '_blank');
           }
         modalClose();
         openModal(null, 'success')
@@ -142,8 +144,9 @@ window.addEventListener( "load", function () {
 
     // The data sent is what the user provided in the form
     console.log(data)
-    XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    XHR.send( 'param=' + JSON.stringify(data) );
+    XHR.setRequestHeader("Content-Type", "application/json");
+    const sendData = JSON.stringify(data)
+    XHR.send(sendData);
   }
 
   // Access the form element...

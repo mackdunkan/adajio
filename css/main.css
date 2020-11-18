@@ -292,5 +292,31 @@ body.slider__body {
 .swiper-pagination .swiper-pagination-bullet-active {
   background: white;
 }
+
+.modal {
+  animation-name: open-modal;
+  animation-duration: .4s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes open-modal {
+  0% {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    top: -400px;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    top: 0
+  }
+}
+
 @import '~/node_modules/swiper/swiper-bundle.css';
 @tailwind utilities;
