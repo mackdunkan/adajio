@@ -34,9 +34,10 @@ const enableSwiper = function() {
   let swiperPage = new Swiper('.slides-page', {
     direction: 'vertical',
     //effect: 'fade',
-    speed: 600,
+    speed: 1000,
     slidesPerView: 1,
     mousewheel: true,
+    simulateTouch: false,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -58,7 +59,6 @@ var mySwiper = new Swiper ('.invest-slide', {
   loop: true,
   centeredSlides: true,
   slidesPerView: 1,
-
   pagination: {
     el: '.invest-pagination',
     clickable: true,
@@ -124,6 +124,7 @@ window.addEventListener( "load", function () {
       if(res === "success") {
         ym(61997986, 'reachGoal', goal())
         if(data.idAndGoal === "preza" || data.idAndGoal === "timeout") {
+          modalClose();
           window.open('https://drive.google.com/file/d/1i9O7I3VtoB4-6n8MWgMcXxdof7EF3XzX/view', '_blank');
           }
         modalClose();

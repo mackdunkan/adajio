@@ -1,7 +1,7 @@
 
-ajavascript:S1481";Remove the declaration of the unused 'swiperPage' variable.(‚àù®ÿÿÿÿÿ8¾˜Ğµİ.
-Fjavascript:S878"!Unexpected use of comma operator.(©ÈÁ¾ÿÿÿÿÿ8Ë€ĞìÜ.
-^javascript:S1854"8Remove this useless assignment to variable "swiperPage".(‚àù®ÿÿÿÿÿ8¾˜Ğµİ.
-Gjavascript:S1128"&Remove this unused import of 'swiper'.(ó ¹“8Ë€ĞìÜ.
-kjavascript:S905"FExpected an assignment or function call and instead saw an expression.(©ÈÁ¾ÿÿÿÿÿ8Ë€ĞìÜ.
-Xjavascript:S1117"2'sendData' is already declared in the upper scope.(Ïƒæ˜ÿÿÿÿÿ8ó¦Êãİ.
+[javascript:S1117•"2'sendData' is already declared in the upper scope.(Ïƒæ˜ÿÿÿÿÿ8ı¿¾æİ.
+mjavascript:S905"FExpected an assignment or function call and instead saw an expression.(©ÈÁ¾ÿÿÿÿÿ8Ë€ĞìÜ.
+`javascript:S1854""8Remove this useless assignment to variable "swiperPage".(‚àù®ÿÿÿÿÿ8¾˜Ğµİ.
+cjavascript:S1481"";Remove the declaration of the unused 'swiperPage' variable.(‚àù®ÿÿÿÿÿ8¾˜Ğµİ.
+Hjavascript:S878"!Unexpected use of comma operator.(©ÈÁ¾ÿÿÿÿÿ8Ë€ĞìÜ.
+Ijavascript:S1128"&Remove this unused import of 'swiper'.(ó ¹“8Ë€ĞìÜ.

@@ -879,7 +879,10 @@
 
   const setValButtonModal = (ID) => {
     switch (ID) {
-      case "vigoda":
+      case "callback":
+        document.getElementById("button_modal").innerHTML = "Перезвоните мне";
+        break;
+        case "vigoda":
         document.getElementById("button_modal").innerHTML = "Получить расчет";
         break;
       case "vibrat":

@@ -59,14 +59,14 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../my/elm-tutorial" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -76,7 +76,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.elm.workspace.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\anton\adajio\dist" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.start">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -122,9 +128,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +157,8 @@
       <workItem from="1605695147691" duration="23000" />
       <workItem from="1605695382150" duration="6716000" />
       <workItem from="1605721273710" duration="18000" />
-      <workItem from="1605721336594" duration="1114000" />
+      <workItem from="1605721336594" duration="6060000" />
+      <workItem from="1605768275900" duration="6182000" />
     </task>
     <servers />
   </component>
@@ -187,26 +194,26 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="100" y="100" width="1534" height="1200" key="DiffContextDialog/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605470903119" />
-    <state x="647" y="455" key="FileChooserDialogImpl" timestamp="1605632965848">
+    <state x="647" y="455" key="FileChooserDialogImpl" timestamp="1605794230084">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="647" y="455" key="FileChooserDialogImpl/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605632965848" />
-    <state width="1674" height="384" key="GridCell.Tab.0.bottom" timestamp="1605703108230">
+    <state x="647" y="455" key="FileChooserDialogImpl/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605794230084" />
+    <state width="837" height="384" key="GridCell.Tab.0.bottom" timestamp="1605731045240">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="384" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605703108230" />
-    <state width="1674" height="384" key="GridCell.Tab.0.center" timestamp="1605703108230">
+    <state width="837" height="384" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605731045240" />
+    <state width="837" height="384" key="GridCell.Tab.0.center" timestamp="1605731045240">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="384" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605703108230" />
-    <state width="1674" height="384" key="GridCell.Tab.0.left" timestamp="1605703108230">
+    <state width="837" height="384" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605731045240" />
+    <state width="837" height="384" key="GridCell.Tab.0.left" timestamp="1605731045240">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="384" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605703108230" />
-    <state width="1674" height="384" key="GridCell.Tab.0.right" timestamp="1605703108230">
+    <state width="837" height="384" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605731045240" />
+    <state width="837" height="384" key="GridCell.Tab.0.right" timestamp="1605731045240">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="384" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605703108230" />
+    <state width="837" height="384" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605731045240" />
     <state x="368" y="345" key="SettingsEditor" timestamp="1605472046937">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -215,6 +222,10 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="723" y="599" key="WebDeployment.AddServerDialog.v.1/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605470588486" />
+    <state x="574" y="436" width="585" height="534" key="find.popup" timestamp="1605773973710">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="574" y="436" width="585" height="534" key="find.popup/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1605773973710" />
     <state x="683" y="430" key="ftp.server.browser" timestamp="1605470629468">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>

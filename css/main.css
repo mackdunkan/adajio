@@ -270,6 +270,27 @@ body.slider__body {
 @import url("~/font/stylesheet.css");
 @tailwind base;
 @tailwind components;
+
+.page-slide h2 {
+  transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
+  transform: translate3d(0, -20%, 0);
+  opacity: 0;
+}
+
+.swiper-slide.swiper-slide-active h2 {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.page-slide{
+  transition: all 1s linear;
+  transition-delay: 1s;
+}
+
+.swiper-slide.swiper-slide-active .page-slide {
+
+}
+
 .invest-pagination span{
   @apply h-3 w-3
 }
