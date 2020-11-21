@@ -4,16 +4,17 @@ import swiper from 'swiper/bundle';
 // import slider from './page-slide/slide'
 
 const breakpoint = window.matchMedia( '(max-width:767px)' );
+const breakpointLG = window.matchMedia( '(max-width:1024px)' );
 
 const breakpointChecker = function() {
   // if larger viewport and multi-row layout needed
-  if ( breakpoint.matches === true ) {
+  if ( breakpointLG.matches === true ) {
     // clean up old instances and inline styles when available
     // if ( swiperPage !== undefined ) swiperPage.destroy( true, true );
     // or/and do nothing
     return;
     // else if a small viewport and single column layout needed
-  } else if ( breakpoint.matches === false ) {
+  } else if ( breakpointLG.matches === false ) {
     // fire small viewport version of swiper
     return enableSwiper();
   }

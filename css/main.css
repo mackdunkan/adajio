@@ -271,24 +271,26 @@ body.slider__body {
 @tailwind base;
 @tailwind components;
 
-.page-slide h2 {
-  transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
-  transform: translate3d(0, -20%, 0);
-  opacity: 0;
+.page-slide h2{
+  @apply opacity-100
 }
 
-.swiper-slide.swiper-slide-active h2 {
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
-}
-
-.page-slide{
-  transition: all 1s linear;
-  transition-delay: 1s;
-}
-
-.swiper-slide.swiper-slide-active .page-slide {
-
+@media (min-width: 1024px) {
+  .page-slide h2 {
+    transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
+    transform: translate3d(0, -20%, 0);
+    opacity: 0;
+  }
+  
+  .swiper-slide.swiper-slide-active h2 {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  
+  .page-slide{
+    transition: all 1s linear;
+    transition-delay: 1s;
+  }
 }
 
 .invest-pagination span{
