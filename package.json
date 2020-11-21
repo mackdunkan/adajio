@@ -17,9 +17,11 @@
   "dependencies": {
     "autoprefixer": "^9.6.1",
     "font": "0.0.4",
+    "jquery": "^3.5.1",
     "js": "^0.1.0",
     "postcss-cli": "^6.1.2",
     "swiper": "^6.3.5",
-    "tailwindcss": "^1.8.4"
+    "tailwindcss": "^1.8.4",
+    "yt-player": "^3.5.0"
   }
 }

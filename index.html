@@ -25,11 +25,6 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
-  <style>
-    .bg-video {
-      background: linear-gradient(#65cce1, #6365ec);
-    }
-  </style>
 </head>
 
 <body class="relative h-full font-norms" id="body">
@@ -129,10 +124,9 @@
       </div>
     </section>
     <section id="service" class="swiper-slide page-slide overflow-hidden h-auto lg:h-full flex items-center relative">
-      <div class="md:hidden absolute inset-0 bg-cover bg-center" style="background-image: url(img/section/service/bg_service.jpg)"></div>
+      <div class="lg:hidden absolute inset-0 bg-cover bg-center" style="background-image: url(img/section/service/bg_service.jpg)"></div>
       <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div class="hidden md:block md:fixed h-full w-full" style="z-index: -99;">
-        <iframe class="object-cover" src="https://www.youtube.com/embed/1Le9hBgGy64?mode=opaque&wmode=transparent&autoplay=1&loop=1&controls=0&modestbranding=1&rel=0&autohide=1&showinfo=0&color=white&iv_load_policy=3&theme=light&wmode=transparent&mute=1&playlist=1Le9hBgGy64" frameborder="0" height="100%" width="100%" allow="autoplay"></iframe>
+      <div id="service-video" class="fixed bg-video" style="z-index: -99;">
       </div>
       <div class="container mx-auto py-8 lg:py-4 relative">
         <h2 class="text-white text-5xl leading-none text-center md:text-left sm:text-6xl font-medium">Мировой сервис в Сочи</h2>
@@ -310,9 +304,7 @@
     <section id="investments" class="swiper-slide page-slide overflow-hidden h-auto lg:h-full flex items-center relative">
       <div class="md:hidden absolute inset-0 bg-cover bg-center" style="background-image: url(img/section/investments/bg_investments.jpg)"></div>
       <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div class="hidden md:block md:fixed h-full w-full" style="z-index: -99;">
-        <iframe class="object-cover" src="https://www.youtube.com/embed/iSRzFpQF1PU?mode=opaque&wmode=transparent&autoplay=1&loop=1&controls=0&modestbranding=1&rel=0&autohide=1&showinfo=0&color=white&iv_load_policy=3&theme=light&wmode=transparent&mute=1&playlist=iSRzFpQF1PU" frameborder="0" height="100%" width="100%" allow="autoplay"></iframe>
-      </div>
+      <div id="investments-video" class="fixed bg-video" style="z-index: -99;"></div>
       <div class="container mx-auto py-8 lg:py-4 relative">
         <h2 class="text-5xl leading-none sm:text-6xl font-medium text-white text-center">Инвестиции, которые работают</h2>
         <div class="mt-8 sm:px-16 relative">

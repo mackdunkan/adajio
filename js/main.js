@@ -2,9 +2,47 @@ import Swiper from 'swiper';
 import swiper from 'swiper/bundle';
 // import 'swiper/swiper-bundle.css';
 // import slider from './page-slide/slide'
+import $ from 'jquery';
 
+const YTPlayer = require('yt-player')
 const breakpoint = window.matchMedia( '(max-width:767px)' );
-const breakpointLG = window.matchMedia( '(max-width:1024px)' );
+const breakpointLG = window.matchMedia( '(max-width:1023,9px)' );
+
+$(window).on('load resize', function(){
+  let w = $(window).width();
+  let h = $(window).height();
+  if(breakpoint.matches === false) {
+    startVideo(h, w)
+  }
+    else {
+      console.log("no breakpoint")
+  }
+
+});
+
+const setVideoSize = (h,w, player) => {
+  if (w/h > 16/9){
+    player.setSize(w, w/16*9);
+    $('.bg-video').css({'left': '0px'});
+  } else {
+    player.setSize(h/9*16, h);
+    $('.bg-video').css({'left': -($('.bg-video').outerWidth()-w)/2});
+  }
+}
+// iSRzFpQF1PU
+const startVideo = (h, w) => {
+
+    const serviceVideo = new YTPlayer('#service-video', {autoplay: true, controls: false, related: false})
+    const investmentsVideo = new YTPlayer('#investments-video', {autoplay: true, controls: false, related: false})
+
+  serviceVideo.load('1Le9hBgGy64')
+  investmentsVideo.load('iSRzFpQF1PU')
+
+  setVideoSize(h, w, serviceVideo)
+  setVideoSize(h, w, investmentsVideo)
+
+}
+
 
 const breakpointChecker = function() {
   // if larger viewport and multi-row layout needed
@@ -177,4 +215,5 @@ window.addEventListener( "load", function () {
     } );
   }
 } );
+
 
