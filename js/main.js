@@ -6,57 +6,83 @@ import $ from 'jquery';
 
 const YTPlayer = require('yt-player')
 const breakpoint = window.matchMedia( '(max-width:767px)' );
-const breakpointLG = window.matchMedia( '(max-width:1023,9px)' );
+const breakpointLG = window.matchMedia( '(max-width:1023px)' );
+const serviceVideo = new YTPlayer('#service-video', {autoplay: true, controls: false, related: false, loop: true})
+const investmentsVideo = new YTPlayer('#investments-video', {autoplay: true, controls: false, related: false, loop: true})
+
+serviceVideo.load('1Le9hBgGy64')
+investmentsVideo.load('iSRzFpQF1PU')
+
+serviceVideo.play()
+serviceVideo.setVolume(0)
+investmentsVideo.play()
+investmentsVideo.setVolume(0)
+
+serviceVideo.on('playing', () => {
+  console.log(serviceVideo.getDuration()) // => 351.521
+})
+
+investmentsVideo.on('playing', () => {
+  console.log(investmentsVideo.getDuration()) // => 351.521
+})
+
+serviceVideo.on('ended', () => {
+  serviceVideo.play()
+})
+
+investmentsVideo.on('ended', () => {
+  investmentsVideo.play()
+})
 
 $(window).on('load resize', function(){
   let w = $(window).width();
   let h = $(window).height();
   if(breakpoint.matches === false) {
-    startVideo(h, w)
+    setVideoSize(h, w, serviceVideo, '#service-video')
+    setVideoSize(h, w, investmentsVideo, '#investments-video')
   }
-    else {
-      console.log("no breakpoint")
+  else {
+    console.log("no breakpoint LG")
+  }
+
+  if(breakpointLG.matches === false) {
+    enableSwiper()
+  }
+  else {
+    console.log("no breakpoint LG")
   }
 
 });
 
-const setVideoSize = (h,w, player) => {
+const setVideoSize = (h,w, player, id) => {
   if (w/h > 16/9){
     player.setSize(w, w/16*9);
     $('.bg-video').css({'left': '0px'});
   } else {
     player.setSize(h/9*16, h);
-    $('.bg-video').css({'left': -($('.bg-video').outerWidth()-w)/2});
+    $(`${id}.bg-video`).css({'left': '0px'});
+    $(`${id}.bg-video`).css({'left': -($(`${id}.bg-video`).outerWidth()-w)/2});
   }
 }
-// iSRzFpQF1PU
-const startVideo = (h, w) => {
-
-    const serviceVideo = new YTPlayer('#service-video', {autoplay: true, controls: false, related: false})
-    const investmentsVideo = new YTPlayer('#investments-video', {autoplay: true, controls: false, related: false})
-
-  serviceVideo.load('1Le9hBgGy64')
-  investmentsVideo.load('iSRzFpQF1PU')
-
-  setVideoSize(h, w, serviceVideo)
-  setVideoSize(h, w, investmentsVideo)
-
-}
 
 
-const breakpointChecker = function() {
-  // if larger viewport and multi-row layout needed
-  if ( breakpointLG.matches === true ) {
-    // clean up old instances and inline styles when available
-    // if ( swiperPage !== undefined ) swiperPage.destroy( true, true );
-    // or/and do nothing
-    return;
-    // else if a small viewport and single column layout needed
-  } else if ( breakpointLG.matches === false ) {
-    // fire small viewport version of swiper
-    return enableSwiper();
-  }
-};
+// const breakpointChecker = function() {
+//   // if larger viewport and multi-row layout needed
+//   if ( breakpointLG.matches === true ) {
+//     // clean up old instances and inline styles when available
+//     // if ( swiperPage !== undefined ) swiperPage.destroy( true, true );
+//     // or/and do nothing
+//     return;
+//     // else if a small viewport and single column layout needed
+//   } else if ( breakpointLG.matches === false ) {
+//     // fire small viewport version of swiper
+//     return enableSwiper();
+//   }
+// };
+// // keep an eye on viewport size changes
+// breakpointLG.addListener(breakpointChecker);
+// // kickstart
+// breakpointChecker();
 
 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
@@ -86,11 +112,6 @@ const enableSwiper = function() {
     parallax:true,
   });
 };
-
-// keep an eye on viewport size changes
-breakpoint.addListener(breakpointChecker);
-// kickstart
-breakpointChecker();
 
 var mySwiper = new Swiper ('.invest-slide', {
   // Optional parameters
